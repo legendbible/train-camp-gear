@@ -57,7 +57,7 @@
     <!-- 中山 -->
     <path d="M0 395 L120 300 L260 385 L400 285 L540 390 L690 310 L830 400 L960 330 L1090 400 L1200 350 L1200 560 L0 560 Z" fill="#1f3d29"/>
     <!-- 鉄道の高架橋 -->
-    <g>
+    <g transform="translate(0 26)">
       <rect x="0" y="404" width="1200" height="7" fill="#122a1a"/>
       <g fill="#122a1a">
         <rect x="60"  y="411" width="10" height="52"/><rect x="200" y="411" width="10" height="52"/>
@@ -67,7 +67,7 @@
         <rect x="1160" y="411" width="10" height="52"/>
       </g>
       <!-- 電車（窓の灯り） -->
-      <g>
+      <g transform="translate(-170 0)">
         <rect x="690" y="376" width="330" height="30" rx="7" fill="#0d1f13"/>
         <g fill="#f0a44b" opacity=".95">
           <rect x="702" y="384" width="17" height="12" rx="2"/><rect x="726" y="384" width="17" height="12" rx="2"/>
@@ -97,17 +97,25 @@
       <path d="M269 512 L285 452 L301 512 Z" fill="#f0a44b" opacity=".9"/>
       <path d="M285 415 L285 398" stroke="#8a9481" stroke-width="2.5" stroke-linecap="round"/>
       <!-- 焚き火 -->
-      <g transform="translate(408 498)">
-        <path d="M-16 12 L16 12" stroke="#122a1a" stroke-width="5" stroke-linecap="round"/>
-        <path d="M-11 13 L11 3" stroke="#122a1a" stroke-width="4" stroke-linecap="round"/>
-        <path d="M0 8 C-9 0 -7 -12 0 -20 C2 -12 9 -10 8 -2 C7 4 4 7 0 8 Z" fill="#e8633a"/>
-        <path d="M0 6 C-4 1 -3 -6 0 -11 C1 -6 4 -5 4 -1 C3.5 3 2 5 0 6 Z" fill="#f0a44b"/>
-        <circle cx="14" cy="-22" r="1.5" fill="#f0a44b" opacity=".8"/>
-        <circle cx="9" cy="-32" r="1.1" fill="#f0a44b" opacity=".55"/>
+      <g transform="translate(412 494)">
+        <!-- 薪 -->
+        <g stroke-linecap="round">
+          <path d="M-22 16 L22 8" stroke="#0c1a10" stroke-width="7"/>
+          <path d="M-22 8 L22 16" stroke="#183021" stroke-width="7"/>
+          <path d="M-15 20 L15 20" stroke="#0c1a10" stroke-width="6"/>
+        </g>
+        <!-- 炎 -->
+        <path d="M0 10 C-17 -1 -18 -21 -7 -36 C-6 -27 1 -24 3 -31 C11 -49 -3 -52 5 -62 C19 -49 25 -32 21 -15 C18 -2 10 7 0 10 Z" fill="#e8633a"/>
+        <path d="M0 7 C-9 0 -10 -13 -4 -24 C-3 -17 2 -16 3 -21 C7 -31 0 -34 5 -41 C13 -32 16 -21 13 -11 C11 -3 6 4 0 7 Z" fill="#f0a44b"/>
+        <path d="M1 4 C-4 0 -5 -8 -1 -15 C0 -11 3 -10 3 -13 C5 -19 1 -21 4 -25 C9 -19 11 -12 9 -6 C8 -1 5 2 1 4 Z" fill="#f5f2e8" opacity=".8"/>
+        <!-- 火の粉 -->
+        <circle cx="18" cy="-58" r="1.9" fill="#f0a44b" opacity=".85"/>
+        <circle cx="-11" cy="-50" r="1.4" fill="#e8633a" opacity=".7"/>
+        <circle cx="12" cy="-72" r="1.3" fill="#f0a44b" opacity=".55"/>
       </g>
       <!-- 焚き火の照り返し -->
-      <ellipse cx="408" cy="512" rx="52" ry="9" fill="#e8633a" opacity=".14"/>
-      <ellipse cx="330" cy="514" rx="150" ry="16" fill="#f0a44b" opacity=".05"/>
+      <ellipse cx="412" cy="514" rx="56" ry="10" fill="#e8633a" opacity=".16"/>
+      <ellipse cx="340" cy="516" rx="155" ry="16" fill="#f0a44b" opacity=".05"/>
     </g>
   </svg>
 
@@ -115,7 +123,7 @@
     <div class="wrap">
       <p class="eyebrow">Solo camp by train &amp; bus</p>
       <h1>車がなくても、<br>キャンプには行ける。</h1>
-      <p class="sub">電車とバスだけで通いつづけて4年。背負って運べる軽さで選んだギアと、駅から辿り着ける場所の記録。</p>
+      <p class="sub">電車とバス、そして徒歩だけで通いつづけて4年。背負って運べる軽さで選んだギアと、駅から歩いて辿り着ける場所の記録。</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#gear">ギアを見る</a>
         <a class="btn btn-forest" href="#spots">キャンプ場を探す</a>
@@ -145,13 +153,53 @@
       <p class="desc">重量・収納サイズ・電車移動での扱いやすさを軸に、実際に使い込んだ道具だけをレビューします。</p>
     </div>
 
+    <!-- カテゴリー -->
+    <nav class="cat-list" aria-label="ギアのカテゴリー">
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4 L20 20 H4 Z"/><path d="M12 4 V20"/></svg>
+        テント・タープ
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 16 C3 11 7 8 12 8 C17 8 21 11 21 16"/><path d="M3 16h18M6 16v3M18 16v3"/></svg>
+        スリーピング
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6v6h12V6"/><path d="M4 20l4-8M20 20l-4-8M4 12h16"/></svg>
+        ファニチャー
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M3 12h18M8 8V5h8v3M10 15h4"/></svg>
+        クーラー・ジャグ
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20c-4-2-5-6-3-9 0 2 1 3 2 2 2-2 0-5 2-7 3 2 5 6 4 10-.6 2.4-2.4 3.6-5 4Z"/></svg>
+        ヒーティング
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3 11v1h6v-1a6 6 0 0 0-3-11Z"/></svg>
+        ライティング
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4v7a2 2 0 0 0 4 0V4M7 11v9"/><path d="M17 4c-2 2-2 6 0 8v8"/></svg>
+        クッキング
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4a4 4 0 0 0-1 7l-8 8 2 2 8-8a4 4 0 1 0-1-9Z"/></svg>
+        ツール
+      </a>
+      <a class="cat-chip" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.2"/></svg>
+        その他
+      </a>
+    </nav>
+
     <div class="card-grid">
 
       <a class="card" href="gear-picogrill-398.html">
         <div class="thumb">
-          <div class="ill-ground"></div>
           <!-- 焚き火イラスト -->
-          <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g transform="translate(100 75) scale(0.72) translate(-100 -75)">
             <!-- 薪（組み木） -->
             <g stroke-linecap="round">
               <path d="M52 124 L148 108" stroke="#23251d" stroke-width="11"/>
@@ -168,6 +216,8 @@
             <circle cx="134" cy="26" r="2.4" fill="#f0a44b"/>
             <circle cx="70" cy="36" r="1.8" fill="#e8633a" opacity=".8"/>
             <circle cx="126" cy="10" r="1.5" fill="#f0a44b" opacity=".6"/>
+          
+            </g>
           </svg>
         </div>
         <div class="body">
@@ -183,14 +233,16 @@
 
       <a class="card" href="#">
         <div class="thumb">
-          <div class="ill-ground"></div>
           <!-- ティピーテントイラスト -->
-          <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g transform="translate(100 75) scale(0.72) translate(-100 -75)">
             <path d="M35 122 L100 30 L165 122 Z" fill="#4a6741"/>
             <path d="M100 30 L100 122" stroke="#16311f" stroke-width="3"/>
             <path d="M82 122 L100 62 L118 122 Z" fill="#f0a44b" opacity=".85"/>
             <path d="M100 30 L100 14" stroke="#16311f" stroke-width="3" stroke-linecap="round"/>
             <path d="M35 122 L20 132 M165 122 L180 132" stroke="#16311f" stroke-width="2.5" stroke-linecap="round"/>
+          
+            </g>
           </svg>
         </div>
         <div class="body">
@@ -206,13 +258,15 @@
 
       <a class="card" href="#">
         <div class="thumb">
-          <div class="ill-ground"></div>
           <!-- チェアイラスト -->
-          <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g transform="translate(100 75) scale(0.72) translate(-100 -75)">
             <path d="M70 45 C68 78 72 95 78 108 L128 108 C132 88 134 66 130 45 C110 56 90 56 70 45 Z" fill="#4a6741"/>
             <path d="M70 45 C90 56 110 56 130 45 L127 62 C108 71 92 71 73 62 Z" fill="#7f9471"/>
             <path d="M62 132 L88 100 M138 132 L112 100 M62 100 L88 132 M138 100 L112 132" stroke="#16311f" stroke-width="4" stroke-linecap="round"/>
             <path d="M78 108 L128 108" stroke="#16311f" stroke-width="4" stroke-linecap="round"/>
+          
+            </g>
           </svg>
         </div>
         <div class="body">
