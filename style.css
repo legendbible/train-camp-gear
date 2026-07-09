@@ -477,6 +477,203 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .affiliate .btn-buy:hover { background: var(--signage-2); transform: translateY(-2px); }
 .affiliate .note { font-size: 11.5px; color: var(--steel); margin: 12px 0 0; }
 
+/* ---------- 一覧ページ ---------- */
+.page-head {
+  background: var(--pine); color: var(--paper);
+  padding: 40px 0 34px; border-bottom: 4px solid var(--signage);
+}
+.page-head .breadcrumb { color: var(--sage); margin-bottom: 18px; }
+.page-head .breadcrumb a { color: var(--sage); }
+.page-head .kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-data); font-size: 11.5px; letter-spacing: .16em;
+  color: var(--signage-2); text-transform: uppercase; margin: 0;
+}
+.page-head .kicker::before { content: ""; width: 20px; height: 1.5px; background: var(--signage-2); }
+.page-head h1 {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(24px, 4.6vw, 34px); margin: 10px 0 14px;
+}
+.page-head .lead { color: #dfe3cd; font-size: 15px; margin: 0 0 20px; max-width: 40em; }
+.page-stats { display: flex; gap: 26px; flex-wrap: wrap; font-family: var(--font-data); font-size: 12px; color: var(--sage); }
+.page-stats b { color: var(--signage-2); font-size: 18px; margin-right: 4px; }
+
+.list-page { padding: 30px 22px 20px; }
+.filter-bar {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: #fffdf6; padding: 16px 16px 12px; margin-bottom: 24px;
+}
+.filter-group { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-bottom: 10px; }
+.filter-label {
+  font-family: var(--font-data); font-size: 10.5px; letter-spacing: .14em;
+  color: var(--steel); text-transform: uppercase; margin-right: 6px; width: 62px; flex: none;
+}
+.filter-chip {
+  font-family: var(--font-display); font-weight: 500; font-size: 12.5px;
+  border: 1px solid var(--line); background: var(--paper-2); color: var(--ink);
+  padding: 6px 13px; border-radius: 99px; cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.filter-chip:hover { border-color: var(--moss); }
+.filter-chip.is-on { background: var(--pine); color: var(--paper); border-color: var(--pine); }
+.filter-count {
+  margin: 4px 0 0; font-family: var(--font-data); font-size: 12px; color: var(--steel);
+  border-top: 1px solid var(--line); padding-top: 10px;
+}
+.filter-count b { color: var(--signage); font-size: 15px; }
+.spot-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.tag-pill {
+  font-size: 11px; font-family: var(--font-data);
+  background: var(--pine); color: var(--paper);
+  padding: 2px 8px; border-radius: 2px;
+}
+.list-note {
+  font-size: 12.5px; color: var(--steel); text-align: center;
+  padding: 22px 0; font-family: var(--font-data);
+}
+
+/* ---------- キャンプ場 詳細 ---------- */
+.spot-hero {
+  display: grid; grid-template-columns: 150px 1fr; gap: 24px; align-items: center;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: #fffdf6; padding: 22px; margin: 26px 0 34px;
+  box-shadow: 0 3px 14px rgba(22,49,31,.05);
+}
+.spot-hero-score { text-align: center; }
+.spot-hero-score .big {
+  display: block; font-family: var(--font-display); font-weight: 900;
+  font-size: 46px; line-height: 1; color: var(--pine);
+}
+.spot-hero-score .of { font-family: var(--font-data); font-size: 12px; color: var(--steel); }
+.spot-hero-score .cap {
+  display: block; margin-top: 8px;
+  font-family: var(--font-data); font-size: 10.5px; letter-spacing: .12em; color: var(--signage);
+}
+.score-row {
+  display: grid; grid-template-columns: 72px 1fr 34px; align-items: center; gap: 12px;
+  margin-bottom: 9px;
+}
+.score-row .k { font-size: 12.5px; color: var(--steel); }
+.score-row .bar { height: 7px; background: var(--paper-3); border-radius: 99px; overflow: hidden; }
+.score-row .bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--moss), var(--signage)); }
+.score-row .v { font-family: var(--font-data); font-size: 12.5px; text-align: right; color: var(--ink); }
+
+/* アクセス経路 */
+.route { position: relative; margin: 20px 0 6px; }
+.route-step { position: relative; padding: 0 0 22px 32px; }
+.route-step::before {
+  content: ""; position: absolute; left: 7px; top: 14px; bottom: -4px;
+  width: 2px; background: repeating-linear-gradient(180deg, var(--moss) 0 6px, transparent 6px 11px);
+}
+.route-step.last::before { display: none; }
+.route-step .dot {
+  position: absolute; left: 0; top: 4px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--paper); border: 3px solid var(--pine);
+}
+.route-step .dot.bus { border-color: var(--moss); }
+.route-step .dot.walk { border-color: var(--sage); }
+.route-step .dot.goal { background: var(--signage); border-color: var(--signage); }
+.route-step .s-title { margin: 0 0 3px; font-family: var(--font-display); font-weight: 700; font-size: 15px; }
+.route-step .s-desc { margin: 0; font-size: 13px; color: var(--steel); }
+
+/* 設備 */
+.facility-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 20px 0 6px;
+}
+.fac {
+  font-size: 12.5px; text-align: center; padding: 9px 6px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--paper-2); color: #a9a698; text-decoration: line-through;
+}
+.fac.is-on {
+  background: var(--pine); color: var(--paper); border-color: var(--pine);
+  text-decoration: none; font-weight: 500;
+}
+
+/* 持っていったギア */
+.gear-inline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 18px 0 6px; }
+.gear-mini {
+  display: flex; flex-direction: column; gap: 3px;
+  border: 1px solid var(--line); border-left: 3px solid var(--signage);
+  border-radius: var(--radius); background: #fffdf6;
+  padding: 12px 13px; text-decoration: none; color: var(--ink);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.gear-mini:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.gear-mini .cat { font-family: var(--font-data); font-size: 10px; letter-spacing: .1em; color: var(--moss); }
+.gear-mini .nm { font-family: var(--font-display); font-weight: 700; font-size: 13.5px; }
+.gear-mini .wt { font-family: var(--font-data); font-size: 11.5px; color: var(--signage); }
+
+/* 外部リンクカード */
+.external-card {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--paper-2); padding: 20px; margin: 34px 0; text-align: center;
+}
+.external-card .ec-label {
+  font-family: var(--font-data); font-size: 10.5px; letter-spacing: .16em;
+  color: var(--signage); margin: 0 0 8px; text-transform: uppercase;
+}
+.external-card .ec-text { margin: 0 0 14px; font-size: 14px; }
+.external-card .ec-btn {
+  display: inline-block; background: var(--pine); color: var(--paper);
+  font-family: var(--font-display); font-weight: 700; font-size: 14px;
+  text-decoration: none; padding: 12px 26px; border-radius: 3px;
+}
+.external-card .ec-btn:hover { background: var(--pine-2); }
+
+/* 本への導線 */
+.book-cta {
+  border: 1.5px solid var(--moss); border-radius: var(--radius);
+  background: linear-gradient(180deg, #fffdf6, var(--paper-2));
+  padding: 22px 20px; margin: 30px 0;
+}
+.book-cta .bc-k {
+  font-family: var(--font-data); font-size: 10.5px; letter-spacing: .16em;
+  color: var(--signage); margin: 0 0 6px; text-transform: uppercase;
+}
+.book-cta .bc-t { font-family: var(--font-display); font-weight: 700; font-size: 16px; margin: 0 0 8px; }
+.book-cta .bc-d { font-size: 13px; color: var(--steel); margin: 0 0 14px; }
+.book-cta .bc-btn {
+  display: inline-block; background: var(--signage); color: #221503;
+  font-family: var(--font-display); font-weight: 700; font-size: 14px;
+  text-decoration: none; padding: 11px 24px; border-radius: 3px;
+}
+.book-cta .bc-btn:hover { background: var(--signage-2); }
+
+.back-link { margin: 30px 0 10px; font-family: var(--font-display); font-size: 14px; }
+.back-link a { text-decoration: none; color: var(--moss); font-weight: 700; }
+
+/* 目次 */
+.toc {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--paper-2); padding: 18px 20px; margin: 0 0 30px;
+}
+.toc-title {
+  font-family: var(--font-data); font-size: 10.5px; letter-spacing: .16em;
+  color: var(--signage); text-transform: uppercase; margin: 0 0 10px;
+}
+.toc ol { margin: 0; padding-left: 1.3em; }
+.toc li { margin-bottom: 6px; font-size: 13.5px; }
+.toc li::marker { color: var(--signage); font-family: var(--font-data); font-size: 12px; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--signage); text-decoration: underline; }
+
+/* FAQ */
+.faq { margin: 20px 0 6px; }
+.faq-item {
+  border-left: 3px solid var(--moss);
+  background: #fffdf6; border: 1px solid var(--line); border-left: 3px solid var(--moss);
+  border-radius: var(--radius); padding: 15px 17px; margin-bottom: 10px;
+}
+.faq-item .q {
+  margin: 0 0 7px; font-family: var(--font-display); font-weight: 700; font-size: 14.5px;
+  display: flex; gap: 9px;
+}
+.faq-item .q::before { content: "Q"; font-family: var(--font-data); color: var(--signage); flex: none; }
+.faq-item .a { margin: 0; font-size: 13.5px; color: var(--steel); display: flex; gap: 9px; }
+.faq-item .a::before { content: "A"; font-family: var(--font-data); color: var(--moss); flex: none; }
+
 /* ---------- 開示・フッター ---------- */
 .disclosure { font-size: 12px; color: var(--steel); background: var(--paper-2); border-top: 1px solid var(--line); }
 .disclosure .wrap { padding: 15px 22px; }
@@ -502,6 +699,9 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 @media (max-width: 760px) {
   .card-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
   .book-grid { grid-template-columns: 1fr; gap: 14px; }
+  .facility-grid { grid-template-columns: repeat(2, 1fr); }
+  .gear-inline { grid-template-columns: 1fr; }
+  .list-page { padding-left: 20px; padding-right: 20px; }
   .routemap::before { left: 16px; }
   .station { padding-left: 44px; padding-right: 0; }
   .station-node { left: 4.5px; }
@@ -511,6 +711,9 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 @media (max-width: 520px) {
   .wrap { padding: 0 20px; }
+  .spot-hero { grid-template-columns: 1fr; gap: 18px; text-align: center; }
+  .score-row { text-align: left; }
+  .filter-label { width: 100%; margin-bottom: 2px; }
   .card-grid { grid-template-columns: 1fr; }
   .cat-list { grid-template-columns: 1fr 1fr; gap: 8px; }
   .cat-chip { font-size: 12px; padding: 10px 10px; }
