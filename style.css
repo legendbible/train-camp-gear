@@ -345,10 +345,15 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .book:hover { box-shadow: var(--shadow); transform: translateY(-4px); border-color: var(--signage); }
 .book-cover {
-  position: relative; aspect-ratio: 16 / 11; overflow: hidden;
+  position: relative; overflow: hidden;
   background: var(--pine);
+  border-bottom: 1px solid var(--line);
 }
-.book-cover svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.book-cover img {
+  width: 100%; height: auto; display: block;
+  transition: transform .35s ease;
+}
+.book:hover .book-cover img { transform: scale(1.03); }
 .book-cover .vol {
   position: absolute; top: 10px; left: 10px; z-index: 1;
   font-family: var(--font-data); font-size: 10.5px; font-weight: 700;
@@ -507,7 +512,6 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 @media (max-width: 520px) {
   .wrap { padding: 0 20px; }
   .card-grid { grid-template-columns: 1fr; }
-  .book-cover { aspect-ratio: 16 / 8; }
   .cat-list { grid-template-columns: 1fr 1fr; gap: 8px; }
   .cat-chip { font-size: 12px; padding: 10px 10px; }
   .btn { min-width: 0; flex: 1 1 0; }
