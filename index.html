@@ -89,7 +89,7 @@
     <!-- 地面 -->
     <path d="M0 468 C300 452 800 452 1200 468 L1200 560 L0 560 Z" fill="#112417"/>
     <!-- テントと焚き火 -->
-    <g>
+    <g transform="translate(170 0)">
       <ellipse cx="300" cy="516" rx="120" ry="13" fill="#0c1a10"/>
       <!-- ティピーテント -->
       <path d="M225 512 L285 415 L345 512 Z" fill="#3c5a38"/>
@@ -118,7 +118,7 @@
       <p class="sub">電車とバスだけで通いつづけて4年。背負って運べる軽さで選んだギアと、駅から辿り着ける場所の記録。</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#gear">ギアを見る</a>
-        <a class="btn btn-ghost" href="#spots">キャンプ場を探す</a>
+        <a class="btn btn-forest" href="#spots">キャンプ場を探す</a>
       </div>
     </div>
   </div>
@@ -129,7 +129,6 @@
   <div class="wrap">
     <span class="item"><span class="k">Camps</span><span class="v">65+</span></span>
     <span class="item"><span class="k">Years</span><span class="v">4</span></span>
-    <span class="item"><span class="k">Cars owned</span><span class="v">0</span></span>
     <span class="item"><span class="k">Base weight</span><span class="v">UL</span></span>
   </div>
 </div>
@@ -151,17 +150,24 @@
       <a class="card" href="gear-picogrill-398.html">
         <div class="thumb">
           <div class="ill-ground"></div>
-          <!-- 焚き火台イラスト -->
+          <!-- 焚き火イラスト -->
           <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M55 55 L100 118 L58 118 Z" fill="#4a6741"/>
-            <path d="M145 55 L100 118 L142 118 Z" fill="#4a6741"/>
-            <path d="M55 55 L145 55 L100 118 Z" fill="#7f9471" opacity=".5"/>
-            <path d="M40 118 L160 118" stroke="#16311f" stroke-width="4" stroke-linecap="round"/>
-            <path d="M60 55 L140 55" stroke="#16311f" stroke-width="4" stroke-linecap="round"/>
-            <g transform="translate(100 52)">
-              <path d="M0 6 C-11 -4 -8 -20 0 -30 C3 -20 11 -16 10 -6 C9 2 5 5 0 6 Z" fill="#e8633a"/>
-              <path d="M0 3 C-5 -2 -4 -10 0 -16 C1.5 -10 5 -8 4.5 -3 C4 1 2 2.5 0 3 Z" fill="#f0a44b"/>
+            <!-- 薪（組み木） -->
+            <g stroke-linecap="round">
+              <path d="M52 124 L148 108" stroke="#23251d" stroke-width="11"/>
+              <circle cx="150" cy="108" r="6" fill="#d6d0ba"/>
+              <path d="M52 108 L148 124" stroke="#3a3d31" stroke-width="11"/>
+              <circle cx="50" cy="108" r="6" fill="#d6d0ba"/>
+              <path d="M66 130 L134 130" stroke="#23251d" stroke-width="10"/>
             </g>
+            <!-- 大きな炎 -->
+            <path d="M100 108 C74 92 72 62 88 40 C90 54 100 58 104 48 C118 22 96 18 108 4 C130 22 138 46 132 70 C128 90 116 104 100 108 Z" fill="#e8633a"/>
+            <path d="M100 104 C86 94 84 74 94 58 C96 68 104 70 106 62 C112 48 102 44 110 34 C122 46 126 62 122 76 C119 90 111 100 100 104 Z" fill="#f0a44b"/>
+            <path d="M101 100 C94 94 93 82 99 72 C100 78 105 79 106 74 C109 66 104 63 108 58 C114 66 116 76 113 84 C111 92 107 97 101 100 Z" fill="#f5f2e8" opacity=".85"/>
+            <!-- 火の粉 -->
+            <circle cx="134" cy="26" r="2.4" fill="#f0a44b"/>
+            <circle cx="70" cy="36" r="1.8" fill="#e8633a" opacity=".8"/>
+            <circle cx="126" cy="10" r="1.5" fill="#f0a44b" opacity=".6"/>
           </svg>
         </div>
         <div class="body">
@@ -300,8 +306,7 @@
       <p>誰かの「車がないから無理かな」を「これなら行けそう」に変えられたら、という気持ちで書いています。</p>
       <div class="about-stats">
         <div class="stat"><div class="n"><b>65</b>+</div><div class="c">記録したキャンプ地</div></div>
-        <div class="stat"><div class="n"><b>4</b>yrs</div><div class="c">公共交通ソロキャンプ歴</div></div>
-        <div class="stat"><div class="n"><b>0</b></div><div class="c">所有する車</div></div>
+        <div class="stat"><div class="n"><b>4</b>years</div><div class="c">公共交通ソロキャンプ歴</div></div>
       </div>
     </div>
   </div>

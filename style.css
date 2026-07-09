@@ -131,6 +131,8 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .btn:hover { transform: translateY(-2px); }
 .btn-primary { background: var(--signage); color: #221503; }
 .btn-primary:hover { background: var(--signage-2); }
+.btn-forest { background: var(--sage); color: #12271a; }
+.btn-forest:hover { background: #93a884; }
 .btn-ghost { background: rgba(245,242,232,.06); color: var(--paper); border-color: rgba(245,242,232,.45); }
 .btn-ghost:hover { border-color: var(--signage-2); color: var(--signage-2); }
 
@@ -207,12 +209,16 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .card:hover { box-shadow: var(--shadow); transform: translateY(-4px); border-color: var(--moss); }
 .card .thumb {
+  position: relative;
   aspect-ratio: 4 / 3;
   background: linear-gradient(160deg, var(--paper-2), var(--paper-3));
-  display: flex; align-items: center; justify-content: center;
-  position: relative; overflow: hidden;
+  overflow: hidden;
 }
-.card .thumb svg { width: 62%; height: auto; }
+.card .thumb svg {
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58%; height: auto;
+}
 .card .thumb .ill-ground {
   position: absolute; bottom: 0; left: 0; right: 0; height: 26%;
   background: radial-gradient(120% 100% at 50% 120%, rgba(74,103,65,.24), transparent 70%);
