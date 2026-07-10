@@ -728,6 +728,61 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .tag-pill.onsen { background: var(--ember); }
 
+/* ---------- このギアを使ったキャンプ場 ---------- */
+.used-at { margin: 44px 0 10px; padding-top: 26px; border-top: 2px solid var(--ink); }
+.ua-head { margin-bottom: 18px; }
+.ua-k, .rel-k {
+  font-family: var(--font-data); font-size: 10.5px; letter-spacing: .18em;
+  color: var(--signage); text-transform: uppercase; margin: 0 0 5px;
+}
+.ua-t, .rel-t { font-family: var(--font-display); font-weight: 900; font-size: 20px; margin: 0; }
+.used-list { display: flex; flex-direction: column; gap: 8px; }
+.used-spot {
+  display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; align-items: center;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: #fffdf6; padding: 13px 15px; text-decoration: none; color: var(--ink);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.used-spot:hover { border-color: var(--moss); transform: translateX(3px); }
+.us-area {
+  font-family: var(--font-data); font-size: 10.5px; letter-spacing: .1em;
+  color: var(--paper); background: var(--pine);
+  padding: 4px 0; border-radius: 2px; text-align: center;
+}
+.us-name { font-family: var(--font-display); font-weight: 700; font-size: 15px; }
+.us-access { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; }
+.us-access span {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--font-data); font-size: 11px; color: var(--steel);
+  background: var(--paper-2); border: 1px solid var(--line);
+  padding: 2.5px 9px; border-radius: 99px; white-space: nowrap;
+}
+.us-access span.hl { background: var(--pine); border-color: var(--pine); color: var(--paper); }
+.us-access svg { width: 11px; height: 11px; flex: none; }
+.ua-more { margin: 16px 0 0; font-family: var(--font-display); font-size: 13px; }
+.ua-more a { color: var(--moss); text-decoration: none; font-weight: 700; }
+
+/* ---------- こんなギアもあります ---------- */
+.related { margin: 40px 0 10px; padding-top: 26px; border-top: 2px solid var(--ink); }
+.rel-head { margin-bottom: 18px; }
+.rel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.rel-card {
+  display: flex; flex-direction: column; gap: 6px;
+  border: 1px solid var(--line); border-top: 3px solid var(--moss);
+  border-radius: var(--radius); background: #fffdf6;
+  padding: 15px 15px 16px; text-decoration: none; color: var(--ink);
+  transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+}
+.rel-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); border-top-color: var(--signage); }
+.rc-cat {
+  font-family: var(--font-data); font-size: 10px; letter-spacing: .12em;
+  color: var(--moss); text-transform: uppercase;
+}
+.rc-name { font-family: var(--font-display); font-weight: 700; font-size: 14.5px; line-height: 1.4; }
+.rc-desc { font-size: 12px; color: var(--steel); line-height: 1.7; flex: 1; }
+.rc-more { font-family: var(--font-display); font-weight: 700; font-size: 12px; color: var(--pine-2); margin-top: 4px; }
+.rel-card:hover .rc-more { color: var(--signage); }
+
 /* ---------- 開示・フッター ---------- */
 .disclosure { font-size: 12px; color: var(--steel); background: var(--paper-2); border-top: 1px solid var(--line); }
 .disclosure .wrap { padding: 15px 22px; }
@@ -753,6 +808,9 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 @media (max-width: 760px) {
   .card-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
   .book-grid { grid-template-columns: 1fr; gap: 14px; }
+  .rel-grid { grid-template-columns: 1fr; }
+  .used-spot { grid-template-columns: 46px 1fr; row-gap: 8px; }
+  .us-access { justify-content: flex-start; grid-column: 1 / -1; }
   .facility-grid { grid-template-columns: repeat(2, 1fr); }
   .gear-inline { grid-template-columns: 1fr; }
   .list-page { padding-left: 20px; padding-right: 20px; }
