@@ -43,7 +43,7 @@
     <div class="page-stats">
       <span><b>65</b> spots</span>
       <span><b>4</b> years</span>
-      <span><b>関東</b> 中心</span>
+      <span><b>7</b> 都県</span>
     </div>
   </div>
 </section>
@@ -55,19 +55,21 @@
     <div class="filter-group">
       <span class="filter-label">アクセス</span>
       <button class="filter-chip is-on" data-filter="access" data-value="all">すべて</button>
-      <button class="filter-chip" data-filter="access" data-value="walk">駅から徒歩</button>
-      <button class="filter-chip" data-filter="access" data-value="bus">バス利用</button>
+      <button class="filter-chip" data-filter="access" data-value="walk">駅から徒歩のみ</button>
+      <button class="filter-chip" data-filter="access" data-value="bus">駅からバス＋徒歩</button>
     </div>
     <div class="filter-group">
-      <span class="filter-label">エリア</span>
+      <span class="filter-label">地域</span>
       <button class="filter-chip is-on" data-filter="area" data-value="all">すべて</button>
       <button class="filter-chip" data-filter="area" data-value="tokyo">東京</button>
-      <button class="filter-chip" data-filter="area" data-value="kanagawa">神奈川</button>
       <button class="filter-chip" data-filter="area" data-value="saitama">埼玉</button>
+      <button class="filter-chip" data-filter="area" data-value="kanagawa">神奈川</button>
       <button class="filter-chip" data-filter="area" data-value="chiba">千葉</button>
-      <button class="filter-chip" data-filter="area" data-value="other">その他</button>
+      <button class="filter-chip" data-filter="area" data-value="yamanashi">山梨</button>
+      <button class="filter-chip" data-filter="area" data-value="shizuoka">静岡</button>
+      <button class="filter-chip" data-filter="area" data-value="gunma">群馬</button>
     </div>
-    <p class="filter-count"><b id="count">1</b> 件を表示中</p>
+    <p class="filter-count"><b id="count">2</b> 件を表示中</p>
   </div>
 
   <!-- 一覧：ここに65件が並ぶ -->
@@ -82,6 +84,7 @@
         <span class="score">4.5</span><span class="lbl">SCORE</span>
       </div>
       <div>
+        <p class="spot-area">東京</p>
         <h3>キャンプ場の名前（サンプル）</h3>
         <div class="access">
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>〇〇駅</span>
@@ -97,9 +100,32 @@
     </a>
     <!-- ▲ ここまでが1件ぶん -->
 
+    <!-- ▼ 「駅から徒歩のみ」のサンプル -->
+    <a class="spot" href="spot-sample.html" data-access="walk" data-area="saitama">
+      <div class="badge">
+        <svg class="badge-mt" viewBox="0 0 104 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 40 L26 12 L48 34 L70 8 L104 40 Z" fill="#4a6741"/>
+        </svg>
+        <span class="score">4.0</span><span class="lbl">SCORE</span>
+      </div>
+      <div>
+        <p class="spot-area">埼玉</p>
+        <h3>キャンプ場の名前（徒歩のみのサンプル）</h3>
+        <div class="access">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>〇〇駅</span>
+          <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩20分</span>
+        </div>
+        <div class="spot-tags">
+          <span class="tag-pill">バス不要</span>
+          <span class="tag-pill">ソロ向き</span>
+        </div>
+      </div>
+    </a>
+    <!-- ▲ ここまで -->
+
   </div>
 
-  <p class="list-note">※ 現在はサンプル1件のみ。ここに65カ所が同じ形式で並びます。</p>
+  <p class="list-note">※ 現在はサンプル2件のみ。ここに65カ所が同じ形式で並びます。</p>
 
 </main>
 
