@@ -321,6 +321,12 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   background: var(--signage); color: #221503;
   padding: 2px 7px; border-radius: 2px;
 }
+.onsen-badge {
+  font-family: var(--font-display); font-weight: 700; font-size: 10px;
+  letter-spacing: .04em;
+  background: var(--ember); color: #fff;
+  padding: 2px 7px; border-radius: 2px;
+}
 .spot h3 {
   font-family: var(--font-display); font-weight: 700; font-size: 17.5px;
   margin: 0 0 7px; transition: color .15s ease;
@@ -687,6 +693,34 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .faq-item .q::before { content: "Q"; font-family: var(--font-data); color: var(--signage); flex: none; }
 .faq-item .a { margin: 0; font-size: 13.5px; color: var(--steel); display: flex; gap: 9px; }
 .faq-item .a::before { content: "A"; font-family: var(--font-data); color: var(--moss); flex: none; }
+
+/* 立ち寄り温泉 */
+.onsen-box {
+  border: 1px solid var(--line); border-left: 4px solid var(--ember);
+  border-radius: var(--radius); background: #fffdf6;
+  padding: 20px 22px; margin: 24px 0 6px;
+  box-shadow: 0 3px 14px rgba(22,49,31,.05);
+}
+.onsen-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.onsen-mark {
+  width: 44px; height: 44px; flex: none; border-radius: 50%;
+  background: var(--ember); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; line-height: 1;
+}
+.onsen-k {
+  margin: 0 0 2px; font-family: var(--font-data); font-size: 10.5px;
+  letter-spacing: .16em; color: var(--steel); text-transform: uppercase;
+}
+.onsen-name { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 17px; }
+.onsen-dl { margin: 0 0 12px; display: grid; grid-template-columns: auto 1fr; gap: 7px 18px; }
+.onsen-dl dt { font-family: var(--font-data); font-size: 12px; color: var(--steel); }
+.onsen-dl dd { margin: 0; font-size: 13.5px; }
+.onsen-note {
+  margin: 0; font-size: 12.5px; color: var(--steel); line-height: 1.75;
+  border-top: 1px solid var(--line); padding-top: 11px;
+}
+.tag-pill.onsen { background: var(--ember); }
 
 /* ---------- 開示・フッター ---------- */
 .disclosure { font-size: 12px; color: var(--steel); background: var(--paper-2); border-top: 1px solid var(--line); }
