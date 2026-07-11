@@ -15,4 +15,7 @@
   <url><loc>https://train-camp-gear.pages.dev/legal/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://train-camp-gear.pages.dev/legal/disclaimer.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://train-camp-gear.pages.dev/legal/about.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://train-camp-gear.pages.dev/spots/hikawa.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://train-camp-gear.pages.dev/spots/nagatoro-auto.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://train-camp-gear.pages.dev/spots/tomoegawa-park.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

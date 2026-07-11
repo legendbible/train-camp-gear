@@ -139,39 +139,35 @@
       <button class="filter-chip is-on" data-filter="onsen" data-value="all">すべて</button>
       <button class="filter-chip" data-filter="onsen" data-value="yes">立ち寄り温泉あり</button>
     </div>
-    <p class="filter-count"><b id="count">2</b> 件を表示中</p>
+    <p class="filter-count"><b id="count">3</b> 件を表示中</p>
   </div>
 
   <!-- 一覧：ここに65件が並ぶ -->
   <div class="spot-list" id="spotList">
 
-    <!-- ▼ 1件のサンプル（この形が65回くり返される） -->
-    <a class="spot" href="/spots/sample.html" data-access="bus" data-area="tokyo" data-onsen="yes">
+    <a class="spot" href="/spots/hikawa.html" data-access="walk" data-area="tokyo" data-onsen="no">
       <div class="badge">
         <svg class="badge-mt" viewBox="0 0 104 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M0 40 L26 12 L48 34 L70 8 L104 40 Z" fill="#4a6741"/>
         </svg>
-        <span class="score">4.5</span><span class="lbl">SCORE</span>
+        <span class="score">4.0</span><span class="lbl">SCORE</span>
       </div>
       <div>
         <p class="spot-area">東京</p>
-        <h3>キャンプ場の名前（サンプル）</h3>
+        <h3>氷川キャンプ場</h3>
         <div class="access">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>〇〇駅</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス15分</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩10分</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>奥多摩駅</span>
+          <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩10分</span>
         </div>
         <div class="spot-tags">
-          <span class="tag-pill onsen">♨ 温泉あり</span>
-          <span class="tag-pill">直火可</span>
-          <span class="tag-pill">ソロ向き</span>
+          <span class="tag-pill">川沿い</span>
+          <span class="tag-pill">徒歩OK</span>
+          <span class="tag-pill">売店あり</span>
         </div>
       </div>
     </a>
-    <!-- ▲ ここまでが1件ぶん -->
 
-    <!-- ▼ 「駅から徒歩のみ」のサンプル -->
-    <a class="spot" href="/spots/sample.html" data-access="walk" data-area="saitama" data-onsen="no">
+    <a class="spot" href="/spots/nagatoro-auto.html" data-access="walk" data-area="saitama" data-onsen="no">
       <div class="badge">
         <svg class="badge-mt" viewBox="0 0 104 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M0 40 L26 12 L48 34 L70 8 L104 40 Z" fill="#4a6741"/>
@@ -180,22 +176,43 @@
       </div>
       <div>
         <p class="spot-area">埼玉</p>
-        <h3>キャンプ場の名前（徒歩のみのサンプル）</h3>
+        <h3>長瀞オートキャンプ場</h3>
         <div class="access">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>〇〇駅</span>
-          <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩20分</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>野上駅</span>
+          <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩15分</span>
         </div>
         <div class="spot-tags">
-          <span class="tag-pill">バス不要</span>
-          <span class="tag-pill">ソロ向き</span>
+          <span class="tag-pill">川沿い</span>
+          <span class="tag-pill">徒歩OK</span>
+          <span class="tag-pill">予約困難</span>
         </div>
       </div>
     </a>
-    <!-- ▲ ここまで -->
 
+    <a class="spot" href="/spots/tomoegawa-park.html" data-access="walk" data-area="saitama" data-onsen="no">
+      <div class="badge">
+        <svg class="badge-mt" viewBox="0 0 104 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 40 L26 12 L48 34 L70 8 L104 40 Z" fill="#4a6741"/>
+        </svg>
+        <span class="score">5.0</span><span class="lbl">SCORE</span>
+      </div>
+      <div>
+        <p class="spot-area">埼玉</p>
+        <h3>ともえ川Park</h3>
+        <div class="access">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>西武秩父駅</span>
+          <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩45分</span>
+        </div>
+        <div class="spot-tags">
+          <span class="tag-pill">川沿い</span>
+          <span class="tag-pill">徒歩OK</span>
+          <span class="tag-pill">絶景</span>
+        </div>
+      </div>
+    </a>
   </div>
 
-  <p class="list-note">※ 現在はサンプル2件のみ。ここに65カ所が同じ形式で並びます。</p>
+  <p class="list-note">※ 順次追加中。実際に訪れた60カ所以上を、この形式で掲載していきます。</p>
 
 </main>
 
