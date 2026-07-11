@@ -238,6 +238,50 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   transform: translateY(-2px);
 }
 .cat-chip:hover svg { color: var(--signage-2); }
+.cat-chip.is-active {
+  background: var(--pine); color: var(--paper); border-color: var(--pine);
+}
+.cat-chip.is-active svg { color: var(--signage-2); }
+.cat-chip .cat-n {
+  margin-left: auto;
+  font-family: var(--font-data); font-size: 11px;
+  background: var(--moss); color: var(--paper);
+  min-width: 18px; height: 18px; padding: 0 5px;
+  border-radius: 99px; display: inline-flex; align-items: center; justify-content: center;
+}
+.cat-chip.is-active .cat-n { background: var(--signage); color: #221503; }
+.cat-chip .cat-soon {
+  margin-left: auto;
+  font-family: var(--font-data); font-size: 9.5px; letter-spacing: .04em;
+  color: var(--steel); border: 1px solid var(--line);
+  padding: 1px 6px; border-radius: 99px; white-space: nowrap;
+}
+.cat-chip.is-empty { opacity: .62; }
+.cat-chip.is-empty:hover {
+  background: #fffdf6; color: var(--ink); border-color: var(--moss); transform: none;
+}
+.cat-chip.is-empty:hover svg { color: var(--moss); }
+
+/* カテゴリーページ：記事なし */
+.cat-empty {
+  text-align: center; padding: 46px 24px;
+  border: 1px dashed var(--line); border-radius: var(--radius);
+  background: #fffdf6;
+}
+.cat-empty svg { width: 40px; height: 40px; margin-bottom: 14px; }
+.cat-empty .ce-t { font-family: var(--font-display); font-weight: 700; font-size: 17px; margin: 0 0 8px; }
+.cat-empty .ce-d { font-size: 13.5px; color: var(--steel); margin: 0 0 20px; line-height: 1.8; }
+.cat-empty .ce-btn {
+  display: inline-block; background: var(--pine); color: var(--paper);
+  font-family: var(--font-display); font-weight: 700; font-size: 14px;
+  text-decoration: none; padding: 12px 26px; border-radius: 3px;
+}
+.cat-empty .ce-btn:hover { background: var(--pine-2); }
+
+/* カテゴリーページのカード内説明 */
+.card .card-desc {
+  font-size: 12px; color: var(--steel); line-height: 1.7; margin: 0 0 10px;
+}
 
 /* ---------- ギアカード ---------- */
 .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
