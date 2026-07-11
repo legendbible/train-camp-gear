@@ -225,6 +225,7 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .cat-chip {
   display: flex; align-items: center; gap: 8px;
+  min-height: 46px;
   padding: 11px 12px;
   border: 1px solid var(--line); border-radius: var(--radius);
   background: #fffdf6; color: var(--ink); text-decoration: none;
@@ -569,6 +570,7 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .page-stats b { color: var(--signage-2); font-size: 18px; margin-right: 4px; }
 
 .list-page { padding: 30px 22px 20px; }
+.list-page > .cat-list:first-child { margin-top: 14px; }
 .filter-bar {
   border: 1px solid var(--line); border-radius: var(--radius);
   background: #fffdf6; padding: 16px 16px 12px; margin-bottom: 24px;
