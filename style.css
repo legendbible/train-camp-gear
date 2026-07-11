@@ -829,6 +829,16 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .rc-more { font-family: var(--font-display); font-weight: 700; font-size: 12px; color: var(--pine-2); margin-top: 4px; }
 .rel-card:hover .rc-more { color: var(--signage); }
 
+/* ---------- 法務ページ ---------- */
+.article.legal .legal-updated {
+  font-family: var(--font-data); font-size: 12px; color: var(--steel);
+  margin: -6px 0 26px; padding-bottom: 18px; border-bottom: 1px solid var(--line);
+}
+.article.legal h2 { font-size: 18px; margin-top: 34px; }
+.article.legal p { font-size: 14px; line-height: 1.95; }
+.article.legal ul { margin: 10px 0 16px; }
+.article.legal li { font-size: 14px; line-height: 1.9; margin-bottom: 5px; }
+
 /* ---------- 開示・フッター ---------- */
 .disclosure { font-size: 12px; color: var(--steel); background: var(--paper-2); border-top: 1px solid var(--line); }
 .disclosure .wrap { padding: 15px 22px; }
@@ -838,7 +848,7 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .site-footer .inner { padding-top: 40px; padding-bottom: 34px; }
 .site-footer a { color: var(--paper); text-decoration: none; }
 .site-footer a:hover { color: var(--signage-2); }
-.site-footer .cols { display: flex; flex-wrap: wrap; gap: 44px; margin-bottom: 26px; }
+.site-footer .cols { display: flex; flex-wrap: wrap; gap: 32px 40px; margin-bottom: 26px; }
 .site-footer h5 {
   font-family: var(--font-data); color: var(--signage-2); font-size: 10.5px;
   letter-spacing: .2em; margin: 0 0 10px;
