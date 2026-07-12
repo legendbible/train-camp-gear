@@ -842,6 +842,23 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .article.legal ul { margin: 10px 0 16px; }
 .article.legal li { font-size: 14px; line-height: 1.9; margin-bottom: 5px; }
 
+/* 訪問の記録 */
+.visit-list { display: flex; flex-direction: column; gap: 14px; margin: 20px 0 6px; }
+.visit-row {
+  border: 1px solid var(--line); border-left: 3px solid var(--signage);
+  border-radius: var(--radius); background: #fffdf6; padding: 16px 18px;
+}
+.visit-row .v-meta { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.visit-row .v-date {
+  font-family: var(--font-data); font-size: 12px; color: var(--paper);
+  background: var(--pine); padding: 3px 10px; border-radius: 99px;
+}
+.visit-row .v-hl { font-family: var(--font-display); font-weight: 700; font-size: 14.5px; color: var(--ink); }
+.visit-row .v-comment { margin: 0 0 10px; font-size: 13.5px; line-height: 1.85; color: var(--ink); }
+.visit-row .v-link { font-family: var(--font-display); font-weight: 700; font-size: 12.5px; color: var(--moss); text-decoration: none; }
+.visit-row .v-link:hover { color: var(--signage); text-decoration: underline; }
+.fac.is-unknown { text-decoration: none; color: #a9a698; background: var(--paper-2); }
+
 /* ---------- 開示・フッター ---------- */
 .disclosure { font-size: 12px; color: var(--steel); background: var(--paper-2); border-top: 1px solid var(--line); }
 .disclosure .wrap { padding: 15px 22px; }
