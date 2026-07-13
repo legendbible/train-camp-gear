@@ -859,6 +859,17 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .visit-row .v-link:hover { color: var(--signage); text-decoration: underline; }
 .fac.is-unknown { text-decoration: none; color: #a9a698; background: var(--paper-2); }
 
+/* ギア写真 */
+.gear-photo { margin: 6px 0 26px; }
+.gear-photo img {
+  width: 100%; height: auto; border-radius: var(--radius);
+  border: 1px solid var(--line); display: block;
+}
+.gear-photo figcaption {
+  font-size: 12.5px; color: var(--steel); margin-top: 8px;
+  padding-left: 2px; line-height: 1.7;
+}
+
 /* ---------- 開示・フッター ---------- */
 .disclosure { font-size: 12px; color: var(--steel); background: var(--paper-2); border-top: 1px solid var(--line); }
 .disclosure .wrap { padding: 15px 22px; }
