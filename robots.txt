@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://train-camp-gear.pages.dev/sitemap.xml
+Sitemap: https://train-camp-gear.pages.dev/sitemap_v2.xml
