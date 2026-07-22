@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://train-camp-gear.pages.dev/sitemap.xml
+Sitemap: https://ma9solocamp.com/sitemap.xml
+Sitemap: https://ma9solocamp.com/sitemap_v2.xml
