@@ -802,9 +802,16 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   color: var(--paper); background: var(--pine);
   padding: 4px 0; border-radius: 2px; text-align: center;
 }
-.used-spot.ug-stacked { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.ug-card {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: #fffdf6; padding: 13px 15px; text-decoration: none; color: var(--ink);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.ug-card:hover { border-color: var(--moss); transform: translateX(3px); }
 .ug-cat-row { display: flex; align-items: center; gap: 7px; font-family: var(--font-data); font-size: 12.5px; letter-spacing: .04em; color: var(--moss); }
 .ug-cat-row svg { width: 19px; height: 19px; flex: none; color: var(--moss); }
+.ug-name { font-family: var(--font-display); font-weight: 700; font-size: 15px; }
 .us-name { font-family: var(--font-display); font-weight: 700; font-size: 15px; }
 .us-access { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; }
 .us-access span {
