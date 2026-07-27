@@ -802,6 +802,8 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   color: var(--paper); background: var(--pine);
   padding: 4px 0; border-radius: 2px; text-align: center;
 }
+.us-area.ug-icon { display: flex; align-items: center; justify-content: center; padding: 10px 0; }
+.us-area.ug-icon svg { width: 20px; height: 20px; stroke: var(--paper); flex: none; }
 .us-name { font-family: var(--font-display); font-weight: 700; font-size: 15px; }
 .us-access { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; }
 .us-access span {
