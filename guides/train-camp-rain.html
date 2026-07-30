@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ガイド記事一覧｜電車・バスで行くソロキャンプ</title>
-<meta name="description" content="電車・バスソロキャンプの実践ガイド。持ち物リスト、軽量テント比較、行けるキャンプ場まとめなど、個別レビューをまたいで役立つテーマ別記事をまとめています。">
-<link rel="canonical" href="https://ma9solocamp.com/guides/">
+<title>雨の日の電車ソロキャンプ｜装備と判断基準｜タープが効く【ma9】</title>
+<meta name="description" content="雨予報でも大丈夫。電車ソロキャンプの雨天決行の判断基準と、一番効く装備タープを実体験で解説。グラウンドシート・撤収対策・河原の増水リスクまで初心者向けにまとめます。">
+<link rel="canonical" href="https://ma9solocamp.com/guides/train-camp-rain">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="ma9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="電車とバスで行くソロキャンプ">
-<meta property="og:title" content="ガイド記事一覧｜電車・バスで行くソロキャンプ">
-<meta property="og:description" content="電車・バスソロキャンプの実践ガイド。持ち物リスト、軽量テント比較、行けるキャンプ場まとめなど、個別レビューをまたいで役立つテーマ別記事をまとめています。">
-<meta property="og:url" content="https://ma9solocamp.com/guides/">
+<meta property="og:title" content="雨の日の電車ソロキャンプ｜装備と判断基準｜タープが効く【ma9】">
+<meta property="og:description" content="雨予報でも大丈夫。電車ソロキャンプの雨天決行の判断基準と、一番効く装備タープを実体験で解説。グラウンドシート・撤収対策・河原の増水リスクまで初心者向けにまとめます。">
+<meta property="og:url" content="https://ma9solocamp.com/guides/train-camp-rain">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CollectionPage","name":"ガイド記事一覧","url":"https://ma9solocamp.com/guides/","inLanguage":"ja"}
+{"@context":"https://schema.org","@type":"Article","headline":"雨の日の電車ソロキャンプ 装備と判断基準","author":{"@type":"Person","name":"ma9","url":"https://ma9solocamp.com/#about"},"publisher":{"@type":"Organization","name":"電車とバスで行くソロキャンプ"},"mainEntityOfPage":"https://ma9solocamp.com/guides/train-camp-rain","inLanguage":"ja"}
+</script><script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"HOME","item":"https://ma9solocamp.com/"},{"@type":"ListItem","position":2,"name":"GUIDES","item":"https://ma9solocamp.com/guides/"},{"@type":"ListItem","position":3,"name":"雨キャンプ"}]}
 </script>
 <style>
 .guide-toc{background:#fffdf6;border:1px solid var(--line);border-left:3px solid var(--signage);border-radius:var(--radius);padding:18px 22px;margin:26px 0 34px}
@@ -72,6 +74,29 @@
 .author-note{font-size:13px;color:var(--steel);border-top:1px solid var(--line);margin-top:34px;padding-top:16px}
 @media(max-width:640px){.link-list{grid-template-columns:1fr}}
 </style>
+<style>
+.timeline{list-style:none;padding:0;margin:16px 0 26px;position:relative}
+.timeline::before{content:"";position:absolute;left:54px;top:6px;bottom:6px;width:2px;background:var(--paper-3)}
+.timeline li{position:relative;padding:0 0 20px 82px;min-height:40px}
+.timeline .tl-time{position:absolute;left:0;top:0;width:44px;text-align:right;font-family:var(--font-data);font-size:13px;font-weight:700;color:var(--signage)}
+.timeline .tl-dot{position:absolute;left:48px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--moss);border:2px solid var(--paper)}
+.timeline h3{margin:0 0 4px;font-size:15.5px;color:var(--pine-2)}
+.timeline p{margin:0;font-size:13.5px;color:var(--ink);line-height:1.75}
+.cost-total{display:flex;align-items:baseline;gap:10px;background:var(--pine);color:var(--paper);border-radius:var(--radius);padding:16px 20px;margin:18px 0}
+.cost-total .ct-label{font-family:var(--font-data);font-size:12px;letter-spacing:.05em;opacity:.85}
+.cost-total .ct-num{font-family:var(--font-display);font-weight:900;font-size:26px;color:var(--signage-2)}
+.cost-total .ct-unit{font-size:14px}
+.step-cards{list-style:none;padding:0;margin:16px 0 26px;counter-reset:step}
+.step-cards li{position:relative;border:1px solid var(--line);border-left:3px solid var(--signage);border-radius:var(--radius);background:#fffdf6;padding:16px 18px 16px 56px;margin:0 0 12px}
+.step-cards li::before{counter-increment:step;content:counter(step);position:absolute;left:16px;top:16px;width:26px;height:26px;border-radius:50%;background:var(--pine);color:var(--paper);font-family:var(--font-data);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.step-cards h3{margin:0 0 5px;font-size:15.5px;color:var(--pine-2)}
+.step-cards p{margin:0;font-size:13.5px;line-height:1.75}
+.step-cards a{color:var(--pine-2);font-weight:700;text-decoration:none}
+.step-cards a:hover{color:var(--signage)}
+.callout{border:1.5px solid var(--moss);border-radius:var(--radius);background:linear-gradient(180deg,#fffdf6,var(--paper-2));padding:16px 20px;margin:20px 0}
+.callout p{margin:0;font-size:14px}
+.callout strong{color:var(--pine-2)}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -98,22 +123,49 @@
 
 <article class="article guide">
   <div class="wrap">
-    <p class="breadcrumb"><a href="/">HOME</a> / GUIDES</p>
-    <p class="kicker">Guides — 電車・バスキャンプの実践ガイド</p>
-    <h1>ガイド記事</h1>
-    <p class="lead">個別レビューをまたいで役立つ、テーマ別のまとめ記事です。</p>
+    <p class="breadcrumb"><a href="/">HOME</a> / <a href="/guides/">GUIDES</a> / 雨キャンプ</p>
+    <p class="kicker">Rain Guide — 雨の日の電車ソロキャンプ</p>
+    <h1>雨の日の電車ソロキャンプ<br>装備と判断基準</h1>
+    <p class="lead">雨は敵じゃない。備えがあれば、雨の日にしか味わえない静かなキャンプが待っています。</p>
 
-    <ul class="link-list" style="grid-template-columns:1fr;gap:14px;margin-top:26px">
-      <li><a href="/guides/train-camp-start">🧭 電車・バスキャンプの始め方 完全ガイド<span class="ll-sub">初心者はまずここから。全体像と最初の一歩</span></a></li>
-      <li><a href="/guides/train-camp-packing">🎒 電車ソロキャンプの持ち物リスト<span class="ll-sub">実際に使うギアをカテゴリ別チェックリストで全公開</span></a></li>
-      <li><a href="/guides/train-camp-tent">⛺ 電車・バスで行く軽量テント比較<span class="ll-sub">ソロで担いだ3張りを重量・季節で比較</span></a></li>
-      <li><a href="/guides/train-camp-spots">🗺 電車・バスで行けるキャンプ場まとめ<span class="ll-sub">関東中心に通った41か所を都県別に整理</span></a></li>
-      <li><a href="/guides/train-camp-cost">💰 電車キャンプの費用はいくら？<span class="ll-sub">ソロ1泊の内訳を実体験で公開。総額5,000円前後</span></a></li>
-      <li><a href="/guides/train-camp-timeline">🕙 1泊の過ごし方タイムライン<span class="ll-sub">昼着から翌朝まで、一日の流れを時間軸で</span></a></li>
-      <li><a href="/guides/train-camp-rain">🌧 雨の日の装備と判断基準<span class="ll-sub">雨天決行の見極めと、一番効くタープ活用</span></a></li>
+    <p>予約した日が雨予報。行くべきか、やめるべきか。電車キャンプは車と違い、荷物を担いで濡れながら移動する前提なので、判断はより慎重になります。ここでは、雨天決行の判断基準と、実際に効く装備を実体験からまとめます。</p>
+
+    <h2>行く・やめるの判断基準</h2>
+    <p>まず判断です。小雨〜曇り時々雨なら、タープがあれば十分楽しめます。避けたいのは、強風をともなう雨と、川沿いサイトでの増水リスク。特に河原のキャンプ場は、上流の雨で急に水位が上がることがあるので、大雨予報のときは無理をしないのが鉄則です。無理せず撤退できるのも、身軽な電車キャンプの強みです。</p>
+
+    <h2>雨の日に一番効く装備：タープ</h2>
+    <p>結論から言うと、雨キャンプで最も効くのはタープです。テントの前に張れば、調理や焚き火の手元、荷物の一時置き場になる「濡れない前室」が生まれます。これがあるかないかで、雨の日の快適さは天と地ほど変わる。シルナイロンの軽量タープなら電車移動でも負担になりません。</p>
+    <p><a href="/gear/aquaquest-guide-sil-tarp">→ 使っている軽量タープのレビュー</a></p>
+
+    <h2>そのほかの雨対策</h2>
+    <ul class="step-cards">
+      <li>
+        <h3>グラウンドシートと防水</h3>
+        <p>テント底からの浸水を防ぐグラウンドシートは雨の日に必須。ザックカバーや防水スタッフサックで、移動中に道具を濡らさない工夫も大切です。</p>
+      </li>
+      <li>
+        <h3>撤収用のゴミ袋・大型袋</h3>
+        <p>濡れたテントをそのまま入れる大きなビニール袋があると、撤収と持ち帰りが一気に楽に。リュックの中身を濡らさずに済みます。</p>
+      </li>
+      <li>
+        <h3>着替えとレインウェア</h3>
+        <p>上下セパレートのレインウェアが基本。設営中に濡れても着替えがあれば夜を快適に過ごせます。濡れた体は想像以上に体力を奪います。</p>
+      </li>
     </ul>
 
-    <p class="author-note">電車・バス・徒歩のみで4年・60回超のソロキャンプを続けています。CAMPiiiでも「ma9」名義で発信中です。</p>
+    <div class="callout">
+      <p><strong>もっと詳しく。</strong>四季・雨天・全天候での過ごし方は、Kindle第2巻にまとめています。移動から設営、撤収までの雨対策を実体験で。</p>
+    </div>
+
+    <h2>次に読む</h2>
+    <ul class="link-list">
+      <li><a href="/guides/train-camp-start">始め方ガイド<span class="ll-sub">START</span></a></li>
+      <li><a href="/guides/train-camp-packing">持ち物リスト<span class="ll-sub">PACKING</span></a></li>
+      <li><a href="/guides/train-camp-tent">軽量テント比較<span class="ll-sub">TENT</span></a></li>
+      <li><a href="/gear/aquaquest-guide-sil-tarp">タープのレビュー<span class="ll-sub">TARP</span></a></li>
+    </ul>
+
+    <p class="author-note">電車・バス・徒歩のみで4年・60回超のソロキャンプを続けています。CAMPiiiでも「ma9」名義で発信中です。記載の費用・時間は訪問時点の実体験にもとづく目安で、状況により変わります。</p>
 
   </div>
 </article>
