@@ -995,3 +995,23 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   .site-header .brand .name br { display: none; }
   .site-header .brand .name { line-height: 1.2; }
 }
+
+/* === NAV-VISITED-FIX : クリック後にナビ文字が消える問題の修正 === */
+.site-header .nav a:link,
+.site-header .nav a:visited {
+  color: var(--ink);
+}
+.site-header .nav a:hover {
+  color: var(--paper);
+}
+@media (max-width: 760px) {
+  .site-header .nav a:link,
+  .site-header .nav a:visited {
+    color: var(--ink);
+    background: rgba(22,49,31,.05);
+  }
+  .site-header .nav a:hover {
+    color: var(--paper);
+    background: var(--pine);
+  }
+}
