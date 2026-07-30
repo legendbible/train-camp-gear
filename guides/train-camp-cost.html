@@ -82,10 +82,12 @@
 .timeline .tl-dot{position:absolute;left:48px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--moss);border:2px solid var(--paper)}
 .timeline h3{margin:0 0 4px;font-size:15.5px;color:var(--pine-2)}
 .timeline p{margin:0;font-size:13.5px;color:var(--ink);line-height:1.75}
-.cost-total{display:flex;align-items:baseline;gap:10px;background:var(--pine);color:var(--paper);border-radius:var(--radius);padding:16px 20px;margin:18px 0}
-.cost-total .ct-label{font-family:var(--font-data);font-size:12px;letter-spacing:.05em;opacity:.85}
-.cost-total .ct-num{font-family:var(--font-display);font-weight:900;font-size:26px;color:var(--signage-2)}
-.cost-total .ct-unit{font-size:14px}
+.cost-total{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;background:var(--pine);color:var(--paper);border-radius:var(--radius);padding:18px 22px;margin:18px 0}
+.cost-total .ct-label{font-family:var(--font-data);font-size:12px;letter-spacing:.05em;opacity:.85;flex:none}
+.cost-total .ct-figure{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px;margin-left:auto}
+.cost-total .ct-num{font-family:var(--font-display);font-weight:900;font-size:28px;color:var(--signage-2);line-height:1}
+.cost-total .ct-unit{font-size:14px;color:var(--paper)}
+.cost-total .ct-range{width:100%;text-align:right;font-family:var(--font-data);font-size:12px;opacity:.75;margin-top:2px}
 .step-cards{list-style:none;padding:0;margin:16px 0 26px;counter-reset:step}
 .step-cards li{position:relative;border:1px solid var(--line);border-left:3px solid var(--signage);border-radius:var(--radius);background:#fffdf6;padding:16px 18px 16px 56px;margin:0 0 12px}
 .step-cards li::before{counter-increment:step;content:counter(step);position:absolute;left:16px;top:16px;width:26px;height:26px;border-radius:50%;background:var(--pine);color:var(--paper);font-family:var(--font-data);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
@@ -132,7 +134,7 @@
 
     <div class="cost-total">
       <span class="ct-label">SOLO 1泊 の目安</span>
-      <span class="ct-num">約6,000</span><span class="ct-unit">円前後（3,000〜9,500円）</span>
+      <span class="ct-figure"><span class="ct-num">約6,000</span><span class="ct-unit">円前後</span><span class="ct-range">3,000〜9,500円</span></span>
     </div>
 
     <h2>費用の内訳</h2>
