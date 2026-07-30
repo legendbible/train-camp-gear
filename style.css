@@ -955,3 +955,43 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+/* === HEADER-MOBILE-FIX : スマホでロゴとナビの重なりを解消 === */
+@media (max-width: 760px) {
+  .site-header .wrap {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    gap: 6px;
+  }
+  .site-header .brand {
+    justify-content: flex-start;
+  }
+  .site-header .brand .name {
+    font-size: 14px;
+  }
+  .site-header .nav {
+    gap: 2px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .site-header .nav::-webkit-scrollbar { display: none; }
+  .site-header .nav a {
+    font-size: 13px;
+    padding: 6px 12px;
+    flex: 0 0 auto;
+    background: rgba(22,49,31,.05);
+  }
+}
+/* ブランド名の改行をスマホでは1行に（縦積みで幅に余裕があるため） */
+@media (max-width: 760px) {
+  .site-header .brand .name br { display: none; }
+  .site-header .brand .name { line-height: 1.2; }
+}
