@@ -1015,3 +1015,32 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
     background: var(--pine);
   }
 }
+
+/* === DEPART-BOARD-MOBILE-FIX : 4項目でも1行に収める === */
+@media (max-width: 480px) {
+  .depart-board .wrap {
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 13px 14px;
+    justify-content: space-between;
+  }
+  .depart-board .item {
+    gap: 5px;
+    flex: 0 1 auto;
+  }
+  .depart-board .k {
+    font-size: 9px;
+    letter-spacing: .08em;
+  }
+  .depart-board .v {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .depart-board .k {
+    font-size: 8px;
+  }
+  .depart-board .v {
+    font-size: 12px;
+  }
+}
