@@ -139,10 +139,6 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; animation: rise .8s .24s ease both; }
 .hero .cta-row-sub { margin-top: 26px; }
 .hero .cta-row-sub .btn { padding: 10px 20px; min-width: 148px; }
-.btn-ghost-amber { background: rgba(217,131,36,.34); color: var(--paper); border-color: rgba(217,131,36,.75); }
-.btn-ghost-amber:hover { background: rgba(217,131,36,.48); }
-.btn-ghost-sage { background: rgba(127,148,113,.34); color: var(--paper); border-color: rgba(127,148,113,.75); }
-.btn-ghost-sage:hover { background: rgba(127,148,113,.48); }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
 .btn {
@@ -160,6 +156,10 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .btn-forest:hover { background: rgba(127,148,113,.48); }
 .btn-ghost { background: rgba(245,242,232,.06); color: var(--paper); border-color: rgba(245,242,232,.45); }
 .btn-ghost:hover { border-color: var(--signage-2); color: var(--signage-2); }
+.btn-ghost-amber { background: rgba(217,131,36,.34); color: var(--paper); border-color: rgba(217,131,36,.75); }
+.btn-ghost-amber:hover { background: rgba(217,131,36,.48); }
+.btn-ghost-sage { background: rgba(127,148,113,.34); color: var(--paper); border-color: rgba(127,148,113,.75); }
+.btn-ghost-sage:hover { background: rgba(127,148,113,.48); }
 
 /* 発車標風のデータ帯 */
 .depart-board {
@@ -971,6 +971,15 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
+
+/* スマホを横向きにした際、ヒーローの高さ不足でボタンが隠れるのを防ぐ */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero-scene { min-height: 620px; }
+  .hero-copy .wrap { padding-top: 14px; }
+  .hero h1 { font-size: clamp(22px, 4.4vw, 34px); }
+  .hero p.sub { display: none; }
+  .hero .cta-row-sub { margin-top: 14px; }
 }
 
 /* === HEADER-MOBILE-FIX : スマホでロゴとナビの重なりを解消 === */
