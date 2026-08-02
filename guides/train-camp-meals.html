@@ -86,6 +86,11 @@
 .guide p{font-size:15px;line-height:1.9;color:var(--ink);margin:0 0 16px}
 .guide .lead{font-size:16px;color:var(--moss);font-weight:500;margin:0 0 8px}
 .meal-card{border:1px solid var(--line);border-radius:var(--radius);background:#fffdf6;padding:18px 20px;margin:0 0 18px}
+.meal-card .gear-photo-pair .pair img{max-height:460px}
+@media(max-width:520px){
+  .meal-card .gear-photo-pair .pair{grid-template-columns:1fr}
+  .meal-card .gear-photo-pair .pair img{max-height:360px}
+}
 .meal-card h3{margin:0 0 8px;font-size:16.5px}
 .meal-card p{margin:0 0 8px;font-size:14px}
 .meal-card .mc-recipe{font-size:13px;color:var(--steel);border-top:1px dashed var(--line);margin-top:10px;padding-top:10px}
