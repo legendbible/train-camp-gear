@@ -138,7 +138,7 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; animation: rise .8s .24s ease both; }
 .hero .cta-row-sub { margin-top: 26px; }
-.hero .cta-row-sub .btn { padding: 10px 20px; min-width: 148px; }
+.hero .cta-row-sub .btn { padding: 13px 20px; min-width: 168px; }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
 .btn {
@@ -975,10 +975,10 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 
 /* スマホを横向きにした際、ヒーローの高さ不足でボタンが隠れるのを防ぐ */
 @media (orientation: landscape) and (max-height: 500px) {
-  .hero-scene { min-height: 620px; }
+  .hero-scene { min-height: 720px; }
   .hero-copy .wrap { padding-top: 14px; }
   .hero h1 { font-size: clamp(22px, 4.4vw, 34px); }
-  .hero p.sub { display: none; }
+  .hero p.sub { font-size: 14px; margin-bottom: 14px; }
   .hero .cta-row-sub { margin-top: 14px; }
 }
 
