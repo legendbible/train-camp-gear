@@ -137,8 +137,12 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   animation: rise .8s .16s ease both;
 }
 .hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; animation: rise .8s .24s ease both; }
-.hero .cta-row-sub { margin-top: 10px; }
-.hero .cta-row-sub .btn { padding: 10px 20px; min-width: 148px; }
+.hero .cta-row-sub { margin-top: 26px; }
+.hero .cta-row-sub .btn { padding: 10px 20px; min-width: 148px; border: 1.5px solid; }
+.btn-ghost-amber { background: rgba(217,131,36,.16); color: var(--signage-2); border-color: rgba(217,131,36,.5); }
+.btn-ghost-amber:hover { background: rgba(217,131,36,.26); border-color: var(--signage-2); }
+.btn-ghost-sage { background: rgba(127,148,113,.18); color: #c3d4b6; border-color: rgba(127,148,113,.55); }
+.btn-ghost-sage:hover { background: rgba(127,148,113,.28); border-color: var(--sage); }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
 .btn {
