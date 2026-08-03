@@ -8,10 +8,10 @@
   Content-Type: application/xml; charset=utf-8
 
 /style.css
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=2592000
 
 /back-to-top.js
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=2592000
 
 /images/*
   Cache-Control: public, max-age=2592000, immutable
