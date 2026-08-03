@@ -948,7 +948,7 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .disclosure .wrap { padding: 15px 22px; }
 
 .site-footer { background: var(--pine); color: #c9d2bd; font-size: 13.5px; }
-.footer-scene { display: block; width: 100%; height: auto; background: var(--paper); border-bottom: 4px solid var(--pine); }
+.footer-scene { display: block; width: 100%; height: auto; background: var(--pine); }
 .site-footer .inner { padding-top: 40px; padding-bottom: 34px; }
 .site-footer a { color: var(--paper); text-decoration: none; }
 .site-footer a:hover { color: var(--signage-2); }
@@ -962,6 +962,23 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .site-footer .fine {
   font-family: var(--font-data); font-size: 11px; color: #7e8f78;
   border-top: 1px solid rgba(255,255,255,.13); padding-top: 18px;
+}
+
+/* ページ上部に戻るボタン */
+#backToTop {
+  position: fixed; right: 18px; bottom: 18px; z-index: 500;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: var(--signage); color: #221503; border: none;
+  font-size: 19px; line-height: 1; cursor: pointer;
+  box-shadow: var(--shadow);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transform: translateY(8px);
+  transition: opacity .2s ease, transform .2s ease, background .15s ease;
+}
+#backToTop.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+#backToTop:hover { background: var(--signage-2); }
+@media (max-width: 480px) {
+  #backToTop { right: 14px; bottom: 14px; width: 42px; height: 42px; font-size: 17px; }
 }
 
 /* ---------- レスポンシブ ---------- */
