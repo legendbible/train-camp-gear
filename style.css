@@ -81,8 +81,8 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .brand .name { white-space: nowrap; }
 .nav a:hover { background: var(--pine); color: var(--paper); }
-.nav a.is-active { background: var(--signage); color: #221503; }
-.nav a.is-active:hover { background: var(--signage-2); }
+.nav a.is-active { background: rgba(127,148,113,.28); color: var(--ink); }
+.nav a.is-active:hover { background: rgba(127,148,113,.4); }
 
 /* ---------- ヒーロー（風景イラスト） ---------- */
 .hero {
@@ -318,6 +318,13 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .card .thumb .ill-ground {
   position: absolute; bottom: 0; left: 0; right: 0; height: 26%;
   background: radial-gradient(120% 100% at 50% 120%, rgba(74,103,65,.24), transparent 70%);
+}
+.guide-icon-wrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.guide-icon {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: #fffdf6; border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; box-shadow: var(--shadow);
 }
 .card .body { padding: 16px 17px 18px; }
 .card .cat {
@@ -1034,12 +1041,12 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .site-header .nav a.is-active:link,
 .site-header .nav a.is-active:visited {
-  background: var(--signage);
-  color: #221503;
+  background: rgba(127,148,113,.28);
+  color: var(--ink);
 }
 .site-header .nav a.is-active:hover {
-  background: var(--signage-2);
-  color: #221503;
+  background: rgba(127,148,113,.4);
+  color: var(--ink);
 }
 @media (max-width: 760px) {
   .site-header .nav a:link,
@@ -1053,12 +1060,12 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   }
   .site-header .nav a.is-active:link,
   .site-header .nav a.is-active:visited {
-    background: var(--signage);
-    color: #221503;
+    background: rgba(127,148,113,.3);
+    color: var(--ink);
   }
   .site-header .nav a.is-active:hover {
-    background: var(--signage-2);
-    color: #221503;
+    background: rgba(127,148,113,.42);
+    color: var(--ink);
   }
 }
 
