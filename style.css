@@ -330,8 +330,8 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 /* ガイド一覧：キャンプ場と同じ横並びリスト形式 */
 .guide-list { display: flex; flex-direction: column; }
 .guide-row {
-  display: grid; grid-template-columns: 52px 1fr; gap: 14px;
-  align-items: center; padding: 18px 4px;
+  display: grid; grid-template-columns: 34px 1fr; gap: 12px;
+  align-items: start; padding: 18px 4px;
   border-bottom: 1px solid var(--line);
   text-decoration: none; color: var(--ink); border-radius: var(--radius);
   transition: background .15s ease;
@@ -339,9 +339,9 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 .guide-row:hover { background: rgba(74,103,65,.07); }
 .guide-row:hover h3 { color: var(--signage); }
 .guide-row .badge {
-  width: 52px; height: 52px; flex: none;
+  width: 34px; height: 34px; flex: none;
   display: flex; align-items: center; justify-content: center;
-  font-size: 30px;
+  font-size: 22px; margin-top: 2px;
 }
 .guide-row .cat {
   font-family: var(--font-data); font-size: 10.5px; letter-spacing: .14em;
@@ -353,8 +353,8 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .guide-row p { margin: 0; color: var(--steel); font-size: 13.5px; }
 @media (max-width: 480px) {
-  .guide-row { grid-template-columns: 44px 1fr; gap: 10px; padding: 14px 2px; }
-  .guide-row .badge { width: 44px; height: 44px; font-size: 24px; }
+  .guide-row { grid-template-columns: 28px 1fr; gap: 10px; padding: 14px 2px; }
+  .guide-row .badge { width: 28px; height: 28px; font-size: 18px; }
 }
 .card .body { padding: 16px 17px 18px; }
 .card .cat {
