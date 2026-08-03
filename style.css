@@ -488,25 +488,13 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .book:hover .book-link { color: var(--signage); }
 
-/* ---------- About（イラスト帯） ---------- */
-.about-band { margin-top: 26px; }
-.about-band .scene { display: block; width: 100%; height: auto; }
-.about-body {
-  background: var(--pine); color: #dfe3cd;
-  padding: 0 0 46px;
-}
-.about-body .wrap { max-width: 780px; }
-.about-body h2 {
-  font-family: var(--font-display); font-weight: 900; font-size: 23px;
-  color: var(--paper); margin: 0 0 16px;
-}
-.about-body p { margin: 0 0 14px; font-size: 15px; }
-.about-stats { display: flex; gap: 34px; flex-wrap: wrap; margin-top: 26px; }
+/* ---------- About（他の駅と同じ路線図スタイル） ---------- */
+.about-stats { display: flex; gap: 34px; flex-wrap: wrap; margin-top: 6px; }
 .about-stats .stat .n {
-  font-family: var(--font-data); font-size: 30px; font-weight: 700; color: var(--paper);
+  font-family: var(--font-data); font-size: 30px; font-weight: 700; color: var(--pine);
 }
-.about-stats .stat .n b { color: var(--signage-2); }
-.about-stats .stat .c { font-size: 12px; color: var(--sage); font-family: var(--font-data); letter-spacing: .06em; }
+.about-stats .stat .n b { color: var(--signage); }
+.about-stats .stat .c { font-size: 12px; color: var(--steel); font-family: var(--font-data); letter-spacing: .06em; }
 
 /* ---------- 記事 ---------- */
 .article { padding: 44px 0 20px; }
