@@ -81,6 +81,8 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
 }
 .brand .name { white-space: nowrap; }
 .nav a:hover { background: var(--pine); color: var(--paper); }
+.nav a.is-active { background: var(--signage); color: #221503; }
+.nav a.is-active:hover { background: var(--signage-2); }
 
 /* ---------- ヒーロー（風景イラスト） ---------- */
 .hero {
