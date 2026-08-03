@@ -530,8 +530,8 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   font-size: clamp(24px, 4.6vw, 34px); line-height: 1.42; margin: 12px 0 18px;
 }
 .article h1 .h1-sub {
-  display: block; font-size: .62em; font-weight: 500; color: var(--moss);
-  margin-top: 6px;
+  display: block; font-size: .74em; font-weight: 500; color: var(--moss);
+  margin-top: 7px;
 }
 .article .lead {
   font-size: 17px; color: var(--moss); margin: 0 0 28px; font-weight: 500;
