@@ -494,6 +494,7 @@ a { color: var(--pine-2); text-underline-offset: .2em; }
   font-family: var(--font-data); font-size: 30px; font-weight: 700; color: var(--pine);
 }
 .about-stats .stat .n b { color: var(--signage); }
+.about-stats .stat .n .unit { color: var(--ink); font-size: 16px; font-weight: 700; margin-left: 3px; }
 .about-stats .stat .c { font-size: 12px; color: var(--steel); font-family: var(--font-data); letter-spacing: .06em; }
 
 /* ---------- 記事 ---------- */
