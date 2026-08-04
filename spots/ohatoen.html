@@ -91,17 +91,33 @@
   ]
 }
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVQVC5FP54"></script>
+<!-- Google tag (gtag.js) : LCP優先のため window.load 後に遅延読み込み -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-FVQVC5FP54');
+
+  function __loadDeferredScripts() {
+    var gtagScript = document.createElement('script');
+    gtagScript.async = true;
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-FVQVC5FP54';
+    document.head.appendChild(gtagScript);
+
+    var adsScript = document.createElement('script');
+    adsScript.async = true;
+    adsScript.crossOrigin = 'anonymous';
+    adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9950873698408707';
+    document.head.appendChild(adsScript);
+  }
+  if (document.readyState === 'complete') {
+    setTimeout(__loadDeferredScripts, 1000);
+  } else {
+    window.addEventListener('load', function () {
+      setTimeout(__loadDeferredScripts, 1000);
+    });
+  }
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9950873698408707"
-     crossorigin="anonymous"></script>
 </head>
 <body>
 
