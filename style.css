@@ -10,10 +10,10 @@
 .spots-faq p{font-size:14px;line-height:1.8;color:var(--ink);margin:0;}
 .whats-new{background:#fffdf6;border-bottom:1px solid var(--line);padding-top:6px;}
 .whats-new .wrap{display:flex;flex-wrap:wrap;align-items:flex-start;gap:10px 18px;padding:18px 22px 14px;}
-.whats-new .wn-label{font-family:var(--font-data);font-size:10.5px;letter-spacing:.14em;color:var(--signage);text-transform:uppercase;flex:none;margin-top:3px;}
+.whats-new .wn-label{font-family:var(--font-data);font-size:10.5px;letter-spacing:.14em;color:#96540c;text-transform:uppercase;flex:none;margin-top:3px;}
 .whats-new .wn-list{list-style:none;display:flex;flex-direction:column;flex-wrap:wrap;gap:10px;margin:0;padding:0;flex:1 1 auto;}
 .whats-new .wn-list li{display:grid;grid-template-columns:auto 1fr;column-gap:8px;row-gap:1px;font-size:13px;}
-.whats-new .wn-badge{grid-column:1;grid-row:1;align-self:start;margin-top:2px;font-family:var(--font-data);font-size:8.5px;font-weight:700;letter-spacing:.03em;background:var(--ember);color:#fff;padding:1.5px 5px;border-radius:2px;}
+.whats-new .wn-badge{grid-column:1;grid-row:1;align-self:start;margin-top:2px;font-family:var(--font-data);font-size:8.5px;font-weight:700;letter-spacing:.03em;background:#b8421a;color:#fff;padding:1.5px 5px;border-radius:2px;}
 .whats-new .wn-list a{grid-column:2;grid-row:1;color:var(--pine-2);text-decoration:none;font-weight:500;}
 .whats-new .wn-list a:hover{color:var(--signage);text-decoration:underline;}
 .whats-new .wn-date{grid-column:2;grid-row:2;font-family:var(--font-data);font-size:11px;color:var(--steel);}
