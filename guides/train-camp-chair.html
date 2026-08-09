@@ -52,6 +52,13 @@
 .pick a{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--pine-2);text-decoration:none}
 .pick a:hover{color:var(--signage)}
 .pick .buy-row{margin:4px 0 10px}
+.pick .buy-row{display:flex;gap:10px;flex-wrap:wrap;}
+.pick .buy-row a{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:13.5px;text-decoration:none;padding:11px 22px;border-radius:3px;transition:background .15s ease,transform .15s ease;}
+.pick .buy-row a:hover{transform:translateY(-2px);}
+.pick .buy-row .btn-buy{background:var(--signage);color:#221503;}
+.pick .buy-row .btn-buy:hover{background:var(--signage-2);}
+.pick .buy-row .btn-buy-rk{background:#bf0000;color:#fff;}
+.pick .buy-row .btn-buy-rk:hover{background:#910000;}
 .link-list{list-style:none;padding:0;margin:14px 0 24px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .link-list a{display:block;border:1px solid var(--line);border-radius:var(--radius);background:#fffdf6;padding:12px 14px;text-decoration:none;color:var(--pine-2);font-size:13.5px;font-weight:500;transition:.15s}
 .link-list a:hover{border-color:var(--signage);color:var(--signage);transform:translateY(-1px)}
