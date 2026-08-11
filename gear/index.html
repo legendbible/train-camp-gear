@@ -146,22 +146,48 @@
 <main class="wrap list-page">
 
   <!-- 絞り込み -->
-  <div class="filter-bar">
-    <div class="filter-group">
-      <span class="filter-label">カテゴリー</span>
-      <button class="filter-chip is-on" data-filter="category" data-value="all">すべて</button>
-      <button class="filter-chip" data-filter="category" data-value="tent">テント・タープ<span class="cat-n"> 7</span></button>
-      <button class="filter-chip" data-filter="category" data-value="sleeping">スリーピング<span class="cat-n"> 7</span></button>
-      <button class="filter-chip" data-filter="category" data-value="furniture">ファニチャー<span class="cat-n"> 5</span></button>
-      <button class="filter-chip" data-filter="category" data-value="cooler">クーラー・ジャグ<span class="cat-n"> 3</span></button>
-      <button class="filter-chip" data-filter="category" data-value="heating">ヒーティング<span class="cat-n"> 7</span></button>
-      <button class="filter-chip" data-filter="category" data-value="lighting">ライティング<span class="cat-n"> 6</span></button>
-      <button class="filter-chip" data-filter="category" data-value="cooking">クッキング<span class="cat-n"> 20</span></button>
-      <button class="filter-chip" data-filter="category" data-value="tool">ツール<span class="cat-n"> 4</span></button>
-      <button class="filter-chip" data-filter="category" data-value="other">その他<span class="cat-n"> 9</span></button>
-    </div>
-    <p class="filter-count"><b id="count">66</b> 件を表示中</p>
-  </div>
+  <nav class="cat-list" aria-label="ギアのカテゴリー">
+    <button class="cat-chip is-active" data-filter="category" data-value="all">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      すべて <span class="cat-n" id="count">68</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="tent">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 4 L20 20 H4 Z"/><path d="M12 4 V20"/></svg>
+      テント・タープ <span class="cat-n">7</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="sleeping">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 16 C3 11 7 8 12 8 C17 8 21 11 21 16"/><path d="M3 16h18M6 16v3M18 16v3"/></svg>
+      スリーピング <span class="cat-n">7</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="furniture">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6v6h12V6"/><path d="M4 20l4-8M20 20l-4-8M4 12h16"/></svg>
+      ファニチャー <span class="cat-n">5</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="cooler">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M3 12h18M8 8V5h8v3M10 15h4"/></svg>
+      クーラー・ジャグ <span class="cat-n">3</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="heating">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20c-4-2-5-6-3-9 0 2 1 3 2 2 2-2 0-5 2-7 3 2 5 6 4 10-.6 2.4-2.4 3.6-5 4Z"/></svg>
+      ヒーティング <span class="cat-n">7</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="lighting">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3 11v1h6v-1a6 6 0 0 0-3-11Z"/></svg>
+      ライティング <span class="cat-n">6</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="cooking">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4v7a2 2 0 0 0 4 0V4M7 11v9"/><path d="M17 4c-2 2-2 6 0 8v8"/></svg>
+      クッキング <span class="cat-n">20</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="tool">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4a4 4 0 0 0-1 7l-8 8 2 2 8-8a4 4 0 1 0-1-9Z"/></svg>
+      ツール <span class="cat-n">4</span>
+    </button>
+    <button class="cat-chip" data-filter="category" data-value="other">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.2"/></svg>
+      その他 <span class="cat-n">9</span>
+    </button>
+  </nav>
 
   <!-- 一覧：ここにギアが並ぶ -->
   <div class="card-grid" id="gearList">
@@ -1312,29 +1338,25 @@
 (function () {
   var state = { category: 'all' };
   var list = document.getElementById('gearList');
-  var countEl = document.getElementById('count');
   if (!list) return;
 
   function apply() {
     var items = list.querySelectorAll('.card');
-    var n = 0;
     for (var i = 0; i < items.length; i++) {
       var el = items[i];
       var okCategory = state.category === 'all' || el.getAttribute('data-category') === state.category;
       el.style.display = okCategory ? '' : 'none';
-      if (okCategory) n++;
     }
-    if (countEl) countEl.textContent = n;
   }
 
-  var chips = document.querySelectorAll('.filter-chip');
+  var chips = document.querySelectorAll('.cat-chip');
   for (var i = 0; i < chips.length; i++) {
     chips[i].addEventListener('click', function () {
       var key = this.getAttribute('data-filter');
       state[key] = this.getAttribute('data-value');
-      var siblings = document.querySelectorAll('.filter-chip[data-filter="' + key + '"]');
-      for (var j = 0; j < siblings.length; j++) siblings[j].classList.remove('is-on');
-      this.classList.add('is-on');
+      var siblings = document.querySelectorAll('.cat-chip[data-filter="' + key + '"]');
+      for (var j = 0; j < siblings.length; j++) siblings[j].classList.remove('is-active');
+      this.classList.add('is-active');
       apply();
     });
   }
