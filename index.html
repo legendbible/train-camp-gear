@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/images/favicon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="O7PDtF-6FSmeJvVF9TCH6UsoczXNRyN23WNiccJy6CI" />
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v=11">
 <link rel="preload" as="image" href="/images/gear/bundok-solo-tipi-01.avif" fetchpriority="high">
 <title>電車とバスで行くソロキャンプ｜UL装備とアクセスの記録</title>
 <meta name="description" content="車を持たない人のためのソロキャンプ情報。電車とバスだけで通う4年・のべ69回・41カ所の経験から、軽量ギアのレビューと、公共交通で行けるキャンプ場を記録します。">
@@ -183,6 +188,8 @@
 </script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">本文へスキップ</a>
+
 
 <!-- ヘッダー -->
 <header class="site-header">
@@ -206,6 +213,7 @@
     </nav>
   </div>
 </header>
+<span id="main-content" tabindex="-1"></span>
 
 <!-- ヒーロー：時間帯で切り替わる3シーン -->
 <section class="hero" id="hero" data-time="night">
@@ -463,6 +471,35 @@
   </div>
 </div>
 
+<!-- 更新履歴（最大5件） -->
+<div class="whats-new">
+  <div class="wrap">
+    <span class="wn-label">What's New</span>
+    <ul class="wn-list">
+      <li>
+        <span class="wn-badge">NEW</span>
+        <a href="/guides/train-camp-mug">マグカップ3種比較を公開</a>
+        <span class="wn-date">2026年8月</span>
+      </li>
+      <li>
+        <span class="wn-badge">NEW</span>
+        <a href="/guides/train-camp-chair">Helinoxチェア3脚比較を公開</a>
+        <span class="wn-date">2026年8月</span>
+      </li>
+      <li>
+        <span class="wn-badge">NEW</span>
+        <a href="/guides/train-camp-sleep">NANGAシュラフ2本使い分け比較を公開</a>
+        <span class="wn-date">2026年8月</span>
+      </li>
+      <li>
+        <span class="wn-badge">NEW</span>
+        <a href="/#stamp">LINEスタンプ「ソロキャンプネコ」をリリース</a>
+        <span class="wn-date">2026年8月</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <!-- 路線図レイアウト -->
 <main class="routemap wrap">
 
@@ -478,59 +515,44 @@
     <!-- カテゴリー -->
     <nav class="cat-list" aria-label="ギアのカテゴリー">
       <a class="cat-chip" href="/gear/tent/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4 L20 20 H4 Z"/><path d="M12 4 V20"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 4 L20 20 H4 Z"/><path d="M12 4 V20"/></svg>
         テント・タープ <span class="cat-n">7</span>
       </a>
       <a class="cat-chip" href="/gear/sleeping/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 16 C3 11 7 8 12 8 C17 8 21 11 21 16"/><path d="M3 16h18M6 16v3M18 16v3"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 16 C3 11 7 8 12 8 C17 8 21 11 21 16"/><path d="M3 16h18M6 16v3M18 16v3"/></svg>
         スリーピング <span class="cat-n">7</span>
       </a>
       <a class="cat-chip" href="/gear/furniture/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6v6h12V6"/><path d="M4 20l4-8M20 20l-4-8M4 12h16"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6v6h12V6"/><path d="M4 20l4-8M20 20l-4-8M4 12h16"/></svg>
         ファニチャー <span class="cat-n">5</span>
       </a>
       <a class="cat-chip" href="/gear/cooler/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M3 12h18M8 8V5h8v3M10 15h4"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M3 12h18M8 8V5h8v3M10 15h4"/></svg>
         クーラー・ジャグ <span class="cat-n">3</span>
       </a>
       <a class="cat-chip" href="/gear/heating/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20c-4-2-5-6-3-9 0 2 1 3 2 2 2-2 0-5 2-7 3 2 5 6 4 10-.6 2.4-2.4 3.6-5 4Z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20c-4-2-5-6-3-9 0 2 1 3 2 2 2-2 0-5 2-7 3 2 5 6 4 10-.6 2.4-2.4 3.6-5 4Z"/></svg>
         ヒーティング <span class="cat-n">7</span>
       </a>
       <a class="cat-chip" href="/gear/lighting/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3 11v1h6v-1a6 6 0 0 0-3-11Z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3 11v1h6v-1a6 6 0 0 0-3-11Z"/></svg>
         ライティング <span class="cat-n">6</span>
       </a>
       <a class="cat-chip" href="/gear/cooking/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4v7a2 2 0 0 0 4 0V4M7 11v9"/><path d="M17 4c-2 2-2 6 0 8v8"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4v7a2 2 0 0 0 4 0V4M7 11v9"/><path d="M17 4c-2 2-2 6 0 8v8"/></svg>
         クッキング <span class="cat-n">20</span>
       </a>
       <a class="cat-chip" href="/gear/tool/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4a4 4 0 0 0-1 7l-8 8 2 2 8-8a4 4 0 1 0-1-9Z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4a4 4 0 0 0-1 7l-8 8 2 2 8-8a4 4 0 1 0-1-9Z"/></svg>
         ツール <span class="cat-n">4</span>
       </a>
       <a class="cat-chip" href="/gear/other/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.2"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.2"/></svg>
         その他 <span class="cat-n">9</span>
       </a>
     </nav>
 
     <div class="card-grid">
-
-      <a class="card" href="/gear/bundok-solo-tipi">
-        <div class="thumb">
-          <picture><source srcset="/images/gear/bundok-solo-tipi-01.avif" type="image/avif"><source srcset="/images/gear/bundok-solo-tipi-01.webp" type="image/webp"><img src="/images/gear/bundok-solo-tipi-01.jpg" alt="河原に設営したバンドック ソロティピィ1" fetchpriority="high"></picture>
-        </div>
-        <div class="body">
-          <span class="cat">Tent / テント</span>
-          <h3>BUNDOK ソロティピィ1</h3>
-          <div class="datatags">
-            <span class="datatag">インナー外し <b>1.5kg以内</b></span>
-            <span class="datatag">夏用</span>
-          </div>
-          <div class="readmore">レビューを読む →</div>
-        </div>
-      </a>
 
       <a class="card" href="/gear/yoka-tipi">
         <div class="thumb">
@@ -542,6 +564,21 @@
           <div class="datatags">
             <span class="datatag">スカート付き</span>
             <span class="datatag">秋冬春</span>
+          </div>
+          <div class="readmore">レビューを読む →</div>
+        </div>
+      </a>
+
+      <a class="card" href="/gear/bundok-solo-tipi">
+        <div class="thumb">
+          <picture><source srcset="/images/gear/bundok-solo-tipi-01.avif" type="image/avif"><source srcset="/images/gear/bundok-solo-tipi-01.webp" type="image/webp"><img src="/images/gear/bundok-solo-tipi-01.jpg" alt="河原に設営したバンドック ソロティピィ1" fetchpriority="high"></picture>
+        </div>
+        <div class="body">
+          <span class="cat">Tent / テント</span>
+          <h3>BUNDOK ソロティピィ1</h3>
+          <div class="datatags">
+            <span class="datatag">インナー外し <b>1.5kg以内</b></span>
+            <span class="datatag">夏用</span>
           </div>
           <div class="readmore">レビューを読む →</div>
         </div>
@@ -616,7 +653,7 @@
     <div class="station-head">
       <p class="en">Camp Spots</p>
       <h2>駅から行けるキャンプ場</h2>
-      <p class="desc">最寄り駅から徒歩での時間とバス乗車が必要なのかどうか、実際に泊まったキャンプ場を順次掲載しています。</p>
+      <p class="desc">東京周辺から電車とバスだけで行ける、関東近郊のキャンプ場を掲載。最寄り駅から徒歩での時間とバス乗車が必要なのかどうか、実際に泊まった記録を順次掲載しています。</p>
       <a class="more" href="/spots/">41カ所すべて見る</a>
     </div>
 
@@ -633,8 +670,8 @@
           <p class="spot-area">千葉 <span class="walk-badge">徒歩のみ</span></p>
           <h3>いちはらクオードの森</h3>
           <div class="access">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>月崎駅</span>
-            <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩20分</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>月崎駅</span>
+            <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩20分</span>
           </div>
         </div>
       </a>
@@ -650,8 +687,8 @@
           <p class="spot-area">埼玉 <span class="walk-badge">徒歩のみ</span></p>
           <h3>ともえ川Park</h3>
           <div class="access">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>西武秩父駅</span>
-            <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩45分</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>西武秩父駅</span>
+            <span class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="13" cy="4.5" r="1.8"/><path d="M10 21l2.5-6L10 11l3-3 2.5 3.5L19 12"/><path d="M7 12l3-1"/></svg>徒歩45分</span>
           </div>
         </div>
       </a>
@@ -667,8 +704,8 @@
           <p class="spot-area">埼玉</p>
           <h3>白岩渓流園</h3>
           <div class="access">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>飯能駅</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス＋徒歩85分</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>飯能駅</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス＋徒歩85分</span>
           </div>
         </div>
       </a>
@@ -684,8 +721,8 @@
           <p class="spot-area">埼玉</p>
           <h3>大鳩園キャンプ場</h3>
           <div class="access">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>飯能駅</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス＋徒歩70分</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>飯能駅</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス＋徒歩70分</span>
           </div>
         </div>
       </a>
@@ -701,8 +738,8 @@
           <p class="spot-area">神奈川</p>
           <h3>ガンダーラ真鶴シーサイドキャンプ場</h3>
           <div class="access">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>真鶴駅</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス＋徒歩25分</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>真鶴駅</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス＋徒歩25分</span>
           </div>
         </div>
       </a>
@@ -718,8 +755,8 @@
           <p class="spot-area">静岡</p>
           <h3>田貫湖キャンプ場</h3>
           <div class="access">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>富士宮駅</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス40分</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M5 11h14"/></svg>富士宮駅</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="13" rx="3"/><circle cx="8.5" cy="20" r="1.5"/><circle cx="15.5" cy="20" r="1.5"/><path d="M4 10h16"/></svg>バス40分</span>
           </div>
         </div>
       </a>
@@ -859,9 +896,33 @@
     </div>
   </section>
 
-  <!-- 駅5：このサイトについて -->
-  <section class="station" id="about">
+  <!-- 駅5：LINEスタンプ -->
+  <section class="station" id="stamp">
     <span class="station-node">05</span>
+    <div class="station-head">
+      <p class="en">LINE Stickers</p>
+      <h2>ソロキャンプネコ、LINEスタンプになりました</h2>
+      <p class="desc">ソロキャンプを楽しんでるネコのラクス。焚き火・設営・コーヒーなど、キャンプの「あるある」な瞬間を8種類のスタンプにしました。</p>
+    </div>
+
+    <div class="stamp-cta">
+      <picture class="stamp-cta-img">
+        <source srcset="/images/stamps/soro-camp-neko-01.avif" type="image/avif">
+        <source srcset="/images/stamps/soro-camp-neko-01.webp" type="image/webp">
+        <img src="/images/stamps/soro-camp-neko-01.jpg" alt="LINEスタンプ「ソロキャンプネコ」の1コマ、リュックを背負って出発するネコのラクスと「行ってきます！」の文字" loading="lazy" width="500" height="513">
+      </picture>
+      <div class="stamp-cta-body">
+        <p class="bc-k">LINE STORE</p>
+        <p class="bc-t">ソロキャンプネコ</p>
+        <p class="bc-d">ゆるかわなチビ猫キャラが、ソロキャンプの相槌・報告・お誘いに使えるスタンプ8枚セットです。</p>
+        <a class="bc-btn" href="https://store.line.me/stickershop/product/35757074/ja" target="_blank" rel="noopener">LINE STOREで見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 駅6：このサイトについて -->
+  <section class="station" id="about">
+    <span class="station-node">06</span>
     <div class="station-head">
       <p class="en">About</p>
       <h2>このサイトについて</h2>
@@ -921,6 +982,7 @@
         <p class="f-heading">FOLLOW</p>
         <ul>
           <li><a href="https://campiii.com/u/36238" target="_blank" rel="noopener">CAMPiii プロフィール</a></li>
+          <li><a href="https://store.line.me/stickershop/product/35757074/ja" target="_blank" rel="noopener">LINEスタンプ「ソロキャンプネコ」</a></li>
         </ul>
       </div>
     </div>
