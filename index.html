@@ -44,10 +44,20 @@
   "url": "https://ma9solocamp.com/",
   "description": "車を持たない人のためのソロキャンプ情報。電車とバスと徒歩だけで通う4年・のべ69回・41カ所の経験から、軽量ギアのレビューと公共交通で行けるキャンプ場を記録します。",
   "inLanguage": "ja-JP",
+  "datePublished": "2026-07-10T00:00:00+09:00",
+  "dateModified": "2026-09-23T00:00:00+09:00",
   "publisher": {
     "@type": "Person",
     "name": "ma9",
     "url": "https://ma9solocamp.com/#about"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://ma9solocamp.com/search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
   }
 }
 </script>
@@ -184,12 +194,17 @@
     adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9950873698408707';
     document.head.appendChild(adsScript);
   }
+  function __startDeferred() {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(__loadDeferredScripts, { timeout: 3000 });
+    } else {
+      setTimeout(__loadDeferredScripts, 2000);
+    }
+  }
   if (document.readyState === 'complete') {
-    setTimeout(__loadDeferredScripts, 1000);
+    __startDeferred();
   } else {
-    window.addEventListener('load', function () {
-      setTimeout(__loadDeferredScripts, 1000);
-    });
+    window.addEventListener('load', __startDeferred);
   }
 </script>
 </head>
@@ -992,7 +1007,7 @@
         </ul>
       </div>
     </div>
-    <div class="fine">© 2026 電車とバスで行くソロキャンプ / ma9</div>
+    <div class="fine">© 2026 電車とバスで行くソロキャンプ / ma9<span class="sep">・</span><time datetime="2026-07-10">公開日: 2026年7月10日</time><span class="sep">・</span><time datetime="2026-09-23">更新日: 2026年9月23日</time></div>
   </div>
 </footer>
 
