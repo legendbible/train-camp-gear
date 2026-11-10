@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ma9solocamp.com/sitemap.xml
-Sitemap: https://ma9solocamp.com/sitemap_v2.xml
