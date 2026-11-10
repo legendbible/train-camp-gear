@@ -532,39 +532,58 @@
   <div class="photo-picks">
     <div class="station-head">
       <p class="en">Photo Picks</p>
-      <h2>写真で見る、最近のキャンプ</h2>
-      <p class="desc">実際に訪れたときの写真からピックアップ。最新の訪問は2026年11月の滝沢園です。</p>
+      <h2>写真で見るキャンプ場</h2>
+      <p class="desc">実際に訪れたときの写真からピックアップ。開くたびに、訪れた43か所の中からランダムで3か所を表示します。</p>
     </div>
     <div class="card-grid">
-      <a class="card" href="/spots/takizawaen">
-        <div class="thumb"><img src="/images/spots/takizawaen-thumb.jpg" alt="滝沢園の滝と清流" loading="lazy"></div>
+      <a class="card pick-card" href="/spots/takizawaen">
+        <div class="thumb"><img class="pick-img" src="/images/spots/takizawaen-thumb.jpg" alt="滝沢園の滝と清流" loading="lazy"></div>
         <div class="body">
-          <span class="cat">Latest Camp / 最新のキャンプ</span>
-          <h3>滝沢園</h3>
-          <p class="card-desc">神奈川県愛川町。2026年11月に通算6回目の訪問。滝と清流のそばで過ごす、行きつけの場所です。</p>
+          <span class="cat pick-cat">Latest Camp / 最新のキャンプ</span>
+          <h3 class="pick-name">滝沢園</h3>
+          <p class="card-desc pick-desc">神奈川県愛川町。2026年11月に通算6回目の訪問。滝と清流のそばで過ごす、行きつけの場所です。</p>
           <div class="readmore">キャンプ場を見る →</div>
         </div>
       </a>
-      <a class="card" href="/spots/hikawa">
-        <div class="thumb"><img src="/images/spots/hikawa-thumb.jpg" alt="氷川キャンプ場の河原のサイト" loading="lazy"></div>
+      <a class="card pick-card" href="/spots/hikawa">
+        <div class="thumb"><img class="pick-img" src="/images/spots/hikawa-thumb.jpg" alt="氷川キャンプ場の河原のサイト" loading="lazy"></div>
         <div class="body">
-          <span class="cat">Valley / 渓谷</span>
-          <h3>氷川キャンプ場</h3>
-          <p class="card-desc">東京都奥多摩町。奥多摩駅から歩いて行ける、渓谷沿いのキャンプ場です。</p>
+          <span class="cat pick-cat">Valley / 渓谷</span>
+          <h3 class="pick-name">氷川キャンプ場</h3>
+          <p class="card-desc pick-desc">東京都奥多摩町。奥多摩駅から歩いて行ける、渓谷沿いのキャンプ場です。</p>
           <div class="readmore">キャンプ場を見る →</div>
         </div>
       </a>
-      <a class="card" href="/spots/tanukiko">
-        <div class="thumb"><img src="/images/spots/tanukiko-thumb.jpg" alt="田貫湖キャンプ場から望む富士山" loading="lazy"></div>
+      <a class="card pick-card" href="/spots/tanukiko">
+        <div class="thumb"><img class="pick-img" src="/images/spots/tanukiko-thumb.jpg" alt="田貫湖キャンプ場から望む富士山" loading="lazy"></div>
         <div class="body">
-          <span class="cat">Lake &amp; Mt. Fuji / 湖畔</span>
-          <h3>田貫湖キャンプ場</h3>
-          <p class="card-desc">静岡県富士宮市。湖畔のサイトから富士山を望めるキャンプ場です。</p>
+          <span class="cat pick-cat">Lake &amp; Mt. Fuji / 湖畔</span>
+          <h3 class="pick-name">田貫湖キャンプ場</h3>
+          <p class="card-desc pick-desc">静岡県富士宮市。湖畔のサイトから富士山を望めるキャンプ場です。</p>
           <div class="readmore">キャンプ場を見る →</div>
         </div>
       </a>
     </div>
   </div>
+  <script>
+  (function(){
+    var data = [{"s":"bukou","n":"武甲キャンプ場","a":"埼玉","d":"横瀬駅から徒歩15分。河原サイト・温泉併設。"},{"s":"ichihara-quad","n":"いちはらクオードの森","a":"千葉","d":"月崎駅から徒歩30分。森の中・区画サイト。"},{"s":"tomoegawa-park","n":"ともえ川Park","a":"埼玉","d":"西武秩父駅から徒歩45分。川沿い・徒歩OK。"},{"s":"shiraiwa","n":"白岩渓流園","a":"埼玉","d":"飯能駅からバス＋徒歩の合計50分。渓流・バスアクセス。"},{"s":"ohatoen","n":"大鳩園キャンプ場","a":"埼玉","d":"飯能駅からバス＋徒歩の合計70分。川沿い・バスアクセス。"},{"s":"gandhara-manazuru","n":"ガンダーラ真鶴シーサイドキャンプ場","a":"神奈川","d":"真鶴駅からバス＋徒歩の合計25分。海辺・バスアクセス。"},{"s":"tanukiko","n":"田貫湖キャンプ場","a":"静岡","d":"富士宮駅からバス40分。富士山ビュー・湖畔。"},{"s":"shigecamp","n":"しげキャン","a":"千葉","d":"上総中野駅から徒歩10分。川沿い・徒歩OK。"},{"s":"hikawa","n":"氷川キャンプ場","a":"東京","d":"奥多摩駅から徒歩10分。6回訪問・川沿い。"},{"s":"kawai","n":"川井キャンプ場","a":"東京","d":"川井駅から徒歩10分。5回訪問・川沿い。"},{"s":"takizawaen","n":"滝沢園キャンプ場","a":"神奈川","d":"渋沢駅からバス＋徒歩の合計30分。6回訪問・川沿い。"},{"s":"kamioshima","n":"上大島キャンプ場","a":"神奈川","d":"橋本駅からバス＋徒歩の合計35分。2回訪問・川沿い。"},{"s":"nagatoro-auto","n":"長瀞オートキャンプ場","a":"埼玉","d":"野上駅から徒歩15分。川沿い・徒歩OK。"},{"s":"ashigakubo","n":"あしがくぼキャンプ場","a":"埼玉","d":"芦ヶ久保駅から徒歩20分。徒歩OK・貸し切り感。"},{"s":"odaiba-teien","n":"お台場海浜庭園","a":"千葉","d":"館山駅からバス＋徒歩の合計25分。海沿い・バスアクセス。"},{"s":"torami","n":"Campsite TORAMI","a":"千葉","d":"東浪見駅から徒歩3分。徒歩OK・古民家。"},{"s":"cazu","n":"CAZUキャンプ場","a":"埼玉","d":"飯能駅からバス＋徒歩の合計30分。川沿い・バスアクセス。"},{"s":"forestsons","n":"フォレストサンズ長瀞","a":"埼玉","d":"野上駅から徒歩10分。川沿い・徒歩OK。"},{"s":"inagasaki","n":"稲ヶ崎・長崎キャンプ場","a":"千葉","d":"東京駅（高速バス）からバス＋徒歩の合計160分。湖畔・バスアクセス。"},{"s":"recamp-odawara","n":"小田原市いこいの森 RECAMPおだわら","a":"神奈川","d":"小田原駅からバス＋徒歩の合計20分。バスアクセス・高規格。"},{"s":"omotetanzawa","n":"秦野市 表丹沢野外活動センター","a":"神奈川","d":"渋沢駅からバス＋徒歩の合計55分。バスアクセス・お風呂あり。"},{"s":"yamafuru","n":"山のふるさと村","a":"東京","d":"奥多摩駅からバス40分。バスアクセス・送迎あり。"},{"s":"hasuda-uraniwa","n":"蓮田裏庭キャンプ場","a":"埼玉","d":"蓮田駅からバス＋徒歩の合計8分。徒歩OK・バスアクセス。"},{"s":"kamikawa-yuyu","n":"神川ゆ～ゆ～ランド自由広場","a":"埼玉","d":"丹荘駅から徒歩40分。川沿い・無料。"},{"s":"kawasemi-kawara","n":"かわせみ河原","a":"埼玉","d":"鉢形駅から徒歩20分。川沿い・徒歩OK。"},{"s":"okuchaya","n":"奥茶屋キャンプ場","a":"東京","d":"川井駅からバス＋徒歩の合計20分。川沿い・バスアクセス。"},{"s":"akiyamagawa","n":"秋山川キャンプ場","a":"神奈川","d":"藤野駅から徒歩20分。湖畔・徒歩OK。"},{"s":"mahora-inahoyama","n":"Mahora稲穂山キャンプ場","a":"埼玉","d":"皆野駅から徒歩20分。高台・徒歩OK。"},{"s":"kiyose-kanayama","n":"清瀬金山緑地公園河原","a":"東京","d":"清瀬駅からバス＋徒歩の合計20分。4回訪問・無料。"},{"s":"hashidategawa","n":"橋立川キャンプ場","a":"埼玉","d":"浦山口駅から徒歩10分。川沿い・徒歩OK。"},{"s":"izumi-berry","n":"自然館泉ベリーキャンプ場","a":"神奈川","d":"ゆめが丘駅から徒歩10分。徒歩OK・薪無料。"},{"s":"tsukikawaso","n":"月川荘キャンプ場","a":"埼玉","d":"嵐山駅からバス＋徒歩の合計40分。川沿い・直火OK。"},{"s":"nishitanzawa-otaki","n":"西丹沢 大滝キャンプ場","a":"神奈川","d":"新松田駅からバス60分。川沿い・バスアクセス。"},{"s":"tsukione","n":"月尾根自然の森キャンプ場","a":"山梨","d":"梁川駅から徒歩20分。徒歩OK・山林サイト。"},{"s":"wakasu","n":"若洲公園キャンプ場","a":"東京","d":"新木場駅からバス＋徒歩の合計18分。都内・区画サイト。"},{"s":"ootake","n":"大岳キャンプ場","a":"東京","d":"武蔵五日市駅からバス＋徒歩の合計80分。川沿い・バスアクセス。"},{"s":"binnuma","n":"富士見市びん沼自然公園キャンプ場","a":"埼玉","d":"大宮駅からバス＋徒歩の合計55分。川沿い・バスアクセス。"},{"s":"tsunodaohashi","n":"角田大橋河川敷","a":"神奈川","d":"本厚木駅からバス＋徒歩の合計65分。川沿い・無料。"},{"s":"jonanjima","n":"城南島海浜公園キャンプ場","a":"東京","d":"天王洲アイル駅からバス＋徒歩の合計45分。海沿い・バスアクセス。"},{"s":"nakatsugawa","n":"中津川河川敷（八管橋下）","a":"神奈川","d":"本厚木駅からバス＋徒歩の合計40分。川沿い・無料。"},{"s":"gakkobashi","n":"学校橋キャンプ場","a":"埼玉","d":"武蔵嵐山駅からバス＋徒歩の合計15分。川沿い・激安。"},{"s":"nagatoro-village","n":"長瀞キャンプヴィレッジ","a":"埼玉","d":"樋口駅から徒歩20分。区画サイト・徒歩OK。"},{"s":"recamp-shonan","n":"RECAMPしょうなん","a":"千葉","d":"柏駅からバス＋徒歩の合計50分。フリーサイト・バスアクセス。"}];
+    var cards = document.querySelectorAll('.pick-card');
+    if (!cards.length || !data.length) return;
+    var pool = data.slice();
+    for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp; }
+    for (var k = 0; k < cards.length && k < pool.length; k++) {
+      var d = pool[k], c = cards[k];
+      c.href = '/spots/' + d.s;
+      var img = c.querySelector('.pick-img');
+      img.src = '/images/spots/' + d.s + '-thumb.jpg';
+      img.alt = d.n;
+      c.querySelector('.pick-cat').textContent = d.a;
+      c.querySelector('.pick-name').textContent = d.n;
+      c.querySelector('.pick-desc').textContent = d.d;
+    }
+  })();
+  </script>
 </div>
 
 <main class="routemap wrap">
