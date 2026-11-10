@@ -34,3 +34,5 @@
 .spot .badge .spot-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .spot .badge .score{background:rgba(22,49,31,.66);padding:0 7px;border-radius:3px;}
 .spot .badge .lbl{background:rgba(22,49,31,.66);padding:0 5px;border-radius:3px;}
+
+.pr-note{font-size:12px;line-height:1.7;color:var(--steel);margin:2px 0 16px;}
