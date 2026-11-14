@@ -78,6 +78,9 @@
 .area-block h2 .cnt{font-family:var(--font-data);font-size:12px;color:var(--steel);font-weight:400}
 .spot-rows{list-style:none;padding:0;margin:8px 0 0}
 .spot-rows li{padding:11px 0;border-bottom:1px solid var(--line)}
+.spot-rows li{display:flex;gap:12px;align-items:center}
+.spot-rows .sr-thumb{width:64px;height:64px;object-fit:cover;border-radius:4px;flex:none}
+.spot-rows .sr-text{min-width:0}
 .spot-rows li:last-child{border-bottom:0}
 .spot-rows a{color:var(--pine-2);text-decoration:none;font-weight:700;font-size:14.5px}
 .spot-rows a:hover{color:var(--signage)}
@@ -117,7 +120,7 @@
   <div class="wrap">
     <p class="breadcrumb"><a href="/">HOME</a> / <a href="/guides/">GUIDES</a> / キャンプ場まとめ</p>
     <p class="kicker">Spot Guide — 公共交通で行けるキャンプ場</p>
-    <p class="post-date"><time datetime="2026-08-11">公開日: 2026年8月11日</time><span class="sep">・</span><time datetime="2026-11-13">更新日: 2026年11月13日</time></p>
+    <p class="post-date"><time datetime="2026-08-11">公開日: 2026年8月11日</time><span class="sep">・</span><time datetime="2026-11-13">更新日: 2026年11月14日</time></p>
     <h1>電車で行けるキャンプ場 ソロ｜東京近郊・関東の徒歩キャンプ39選</h1>
     <p class="pr-note">※このページにはプロモーション（アフィリエイト広告リンク）を含みます。</p>
     <p class="lead">車がなくてもキャンプはできる。電車で行けるキャンプ場をソロで楽しみたい人向けに、東京近郊・関東を中心に、電車とバスと徒歩だけで実際に行った徒歩キャンプ39か所を都県別に整理しました。</p>
@@ -137,20 +140,20 @@
       </figure>
     <ul class="spot-rows">
         
-        <li><a href="/spots/shigecamp">しげキャン</a><span class="acc">千葉県 ・ 上総中野駅から徒歩約10分</span></li>
-        <li><a href="/spots/torami">Campsite TORAMI</a><span class="acc">千葉県 ・ 駅徒歩3分</span></li>
-        <li><a href="/spots/ashigakubo">あしがくぼキャンプ場</a><span class="acc">埼玉県 ・ 芦ヶ久保駅から徒歩約20分</span></li>
-        <li><a href="/spots/bukou">武甲キャンプ場</a><span class="acc">埼玉県 ・ 横瀬駅から徒歩約15分</span></li>
-        <li><a href="/spots/forestsons">フォレストサンズ長瀞</a><span class="acc">埼玉県 ・ 野上駅から徒歩約10分</span></li>
-        <li><a href="/spots/hashidategawa">橋立川キャンプ場</a><span class="acc">埼玉県 ・ 浦山口駅から徒歩約10分</span></li>
-        <li><a href="/spots/kawasemi-kawara">かわせみ河原</a><span class="acc">埼玉県 ・ 鉢形駅から徒歩約20分</span></li>
+        <li><img class="sr-thumb" src="/images/spots/shigecamp-thumb.jpg" alt="しげキャン" loading="lazy"><div class="sr-text"><a href="/spots/shigecamp">しげキャン</a><span class="acc">千葉県 ・ 上総中野駅から徒歩約10分</span></div></li>
+        <li><img class="sr-thumb" src="/images/spots/torami-thumb.jpg" alt="Campsite TORAMI" loading="lazy"><div class="sr-text"><a href="/spots/torami">Campsite TORAMI</a><span class="acc">千葉県 ・ 駅徒歩3分</span></div></li>
+        <li><img class="sr-thumb" src="/images/spots/ashigakubo-thumb.jpg" alt="あしがくぼキャンプ場" loading="lazy"><div class="sr-text"><a href="/spots/ashigakubo">あしがくぼキャンプ場</a><span class="acc">埼玉県 ・ 芦ヶ久保駅から徒歩約20分</span></div></li>
+        <li><img class="sr-thumb" src="/images/spots/bukou-thumb.jpg" alt="武甲キャンプ場" loading="lazy"><div class="sr-text"><a href="/spots/bukou">武甲キャンプ場</a><span class="acc">埼玉県 ・ 横瀬駅から徒歩約15分</span></div></li>
+        <li><img class="sr-thumb" src="/images/spots/forestsons-thumb.jpg" alt="フォレストサンズ長瀞" loading="lazy"><div class="sr-text"><a href="/spots/forestsons">フォレストサンズ長瀞</a><span class="acc">埼玉県 ・ 野上駅から徒歩約10分</span></div></li>
+        <li><img class="sr-thumb" src="/images/spots/hashidategawa-thumb.jpg" alt="橋立川キャンプ場" loading="lazy"><div class="sr-text"><a href="/spots/hashidategawa">橋立川キャンプ場</a><span class="acc">埼玉県 ・ 浦山口駅から徒歩約10分</span></div></li>
+        <li><img class="sr-thumb" src="/images/spots/kawasemi-kawara-thumb.jpg" alt="かわせみ河原" loading="lazy"><div class="sr-text"><a href="/spots/kawasemi-kawara">かわせみ河原</a><span class="acc">埼玉県 ・ 鉢形駅から徒歩約20分</span></div></li>
         
-        <li><a href="/spots/nagatoro-auto">長瀞オートキャンプ場</a><span class="acc">埼玉県 ・ 野上駅から徒歩約15分</span></li>
+        <li><img class="sr-thumb" src="/images/spots/nagatoro-auto-thumb.jpg" alt="長瀞オートキャンプ場" loading="lazy"><div class="sr-text"><a href="/spots/nagatoro-auto">長瀞オートキャンプ場</a><span class="acc">埼玉県 ・ 野上駅から徒歩約15分</span></div></li>
         
-        <li><a href="/spots/hikawa">氷川キャンプ場</a><span class="acc">東京都 ・ 奥多摩駅から徒歩約10分</span></li>
-        <li><a href="/spots/kawai">川井キャンプ場</a><span class="acc">東京都 ・ 川井駅から徒歩約10分</span></li>
+        <li><img class="sr-thumb" src="/images/spots/hikawa-thumb.jpg" alt="氷川キャンプ場" loading="lazy"><div class="sr-text"><a href="/spots/hikawa">氷川キャンプ場</a><span class="acc">東京都 ・ 奥多摩駅から徒歩約10分</span></div></li>
+        <li><img class="sr-thumb" src="/images/spots/kawai-thumb.jpg" alt="川井キャンプ場" loading="lazy"><div class="sr-text"><a href="/spots/kawai">川井キャンプ場</a><span class="acc">東京都 ・ 川井駅から徒歩約10分</span></div></li>
         
-        <li><a href="/spots/izumi-berry">自然館泉ベリーキャンプ場</a><span class="acc">神奈川県 ・ ゆめが丘駅から徒歩約10分</span></li>
+        <li><img class="sr-thumb" src="/images/spots/izumi-berry-thumb.jpg" alt="自然館泉ベリーキャンプ場" loading="lazy"><div class="sr-text"><a href="/spots/izumi-berry">自然館泉ベリーキャンプ場</a><span class="acc">神奈川県 ・ ゆめが丘駅から徒歩約10分</span></div></li>
     </ul>
 
     <h2 style="border:0;margin-top:46px">📍 エリアごとの傾向</h2>
