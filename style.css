@@ -44,3 +44,7 @@
 .ug-txt{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0;}
 
 .photo-picks{padding:30px 0 10px;}
+
+/* batch60: PC・タブレット幅でヒーローのボタンが切れる問題と、What's Newの配置を修正 */
+@media (min-width:521px) and (max-width:1240px){.hero-scene{min-height:600px}}
+.whats-new .wrap{flex-direction:column;align-items:flex-start;gap:8px;}
